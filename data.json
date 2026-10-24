@@ -62,7 +62,7 @@
     {
       "id": "R02",
       "title": "Database Indexing",
-      "pillar": "System Design",
+      "pillar": "Database",
       "type": "concept",
       "concepts": [
         "SQL",
