@@ -1,0 +1,2787 @@
+{
+  "meta": {
+    "channel": "Sourabh Patel AI",
+    "handle": "@sourabhpatelai",
+    "updated": "2026-10-24",
+    "nextReel": "R09",
+    "nextShort": "S07",
+    "nextVideo": "YT02",
+    "followers": {
+      "instagram": 44,
+      "youtube": 3
+    },
+    "pillarMix": {
+      "System Design": 35,
+      "Backend": 30,
+      "AI": 20,
+      "Jobs": 15
+    },
+    "setupComplete": false,
+    "setupProgress": {
+      "base": "done 2026-10-24 — Midnight Drift background, Claude Editorial fonts (Newsreader + italic pillar terms, Instrument Sans, JetBrains Mono), E5 Glass Pill captions (y=1290), pillar colours (+ light shades), 'Glass' components, 'Kinetic' motion, 'Soft UI' sound kit (pipeline/sfx), watermark 'Photo + handle' centred above captions, no header",
+      "reel-base": "approved 2026-10-24 (16 components incl. CodePanel added in Step 3; Kinetic motion, Soft UI SFX, lucide icons, timeline cueOf)",
+      "reel-layouts": "approved 2026-10-24: reel-system-design (RI-01), reel-ai (RI-65), reel-backend (RI-32 + DB still), reel-design-patterns (RI-58), reel-jobs-tips (RI-77 + chart still); demos in _preview/14-layouts",
+      "pipeline": "approved 2026-10-24 (R08 final): prepare/transcribe(GPU)/edit/align/level/render.mjs/finish/qc_motion in shared/templates/pipeline",
+      "cover": "direction chosen 2026-10-24: existing channel grid style (R08 cover.png, docs/06 \"Chosen direction\"); template folder shared/templates/cover/ still to build in Step 5",
+      "video": "pending",
+      "thumbnail": "pending",
+      "shorts-ending": "pending"
+    },
+    "pillarGroups": {
+      "Backend": [
+        "Backend",
+        "Database",
+        "Design Patterns",
+        "DevOps & Security"
+      ]
+    },
+    "topicResearch": "2026-10-24",
+    "faceCam": "skip for now (2026-10-24); add a FaceCam component later if the 4-week face vs no-face test starts",
+    "proEditRule": "2026-10-24 user: screen never same >1 s; pro-level animations, transitions, VFX, SFX. Enforced by ALIVE/VFX tokens, reel-base built-ins, and pipeline/qc_motion.py gate"
+  },
+  "reels": [
+    {
+      "id": "R01",
+      "title": "1 Billion Free Tokens",
+      "pillar": "AI",
+      "type": "ai",
+      "concepts": [
+        "Gemini",
+        "Groq",
+        "OpenRouter",
+        "Mistral",
+        "free LLM APIs"
+      ],
+      "description": "Free AI tokens/LLM APIs kahan se milte hain",
+      "status": "published",
+      "short": null,
+      "stats": {
+        "views": 159
+      }
+    },
+    {
+      "id": "R02",
+      "title": "Database Indexing",
+      "pillar": "System Design",
+      "type": "concept",
+      "concepts": [
+        "SQL",
+        "Full Table Scan",
+        "B-Tree Index",
+        "slow query in production"
+      ],
+      "description": "Production mein SQL query slow kyun hoti hai, index kaise bachata hai",
+      "status": "published",
+      "short": "S01",
+      "stats": {
+        "views": 1630
+      }
+    },
+    {
+      "id": "R03",
+      "title": "Prompt Injection",
+      "pillar": "AI",
+      "type": "ai",
+      "concepts": [
+        "PDF hidden instructions",
+        "data leak",
+        "LLM security"
+      ],
+      "description": "Kya ek PDF ChatGPT ko trick kar sakti hai",
+      "status": "published",
+      "short": "S02",
+      "stats": {
+        "likes": 28,
+        "comments": 2
+      }
+    },
+    {
+      "id": "R04",
+      "title": "20,000+ IT Jobs",
+      "pillar": "Jobs",
+      "type": "jobs",
+      "concepts": [
+        "1,500 companies",
+        "SDE",
+        "PM",
+        "Data Analyst"
+      ],
+      "description": "Ek jagah 20,000+ IT job openings (official links)",
+      "status": "published",
+      "short": null,
+      "stats": {
+        "views": 185
+      }
+    },
+    {
+      "id": "R05",
+      "title": "Java Stack vs Heap",
+      "pillar": "Backend",
+      "type": "concept",
+      "concepts": [
+        "Java",
+        "Primitives",
+        "Objects",
+        "References",
+        "Stack Frame"
+      ],
+      "description": "Java memory: Stack (references, locals) vs Heap (objects) — TV remote analogy",
+      "status": "published",
+      "short": "S03",
+      "stats": {
+        "views": 1542
+      }
+    },
+    {
+      "id": "R06",
+      "title": "IRCTC Tatkal",
+      "pillar": "System Design",
+      "type": "case",
+      "concepts": [
+        "Traffic Spike",
+        "API Gateway",
+        "Rate Limiter",
+        "Load Balancer",
+        "Cache",
+        "Queue",
+        "Seat Locking",
+        "Payment",
+        "Idempotency"
+      ],
+      "description": "10 baje lakhon users Tatkal booking kaise handle hoti hai",
+      "status": "published",
+      "short": "S04",
+      "video": "YT01",
+      "stats": {
+        "views": 1972
+      }
+    },
+    {
+      "id": "R07",
+      "title": "Server Down (Client–Server)",
+      "pillar": "System Design",
+      "type": "concept",
+      "concepts": [
+        "Client-Server",
+        "Request",
+        "HTTPS",
+        "TCP/Packets",
+        "Status Codes",
+        "404 vs 503",
+        "503 overload"
+      ],
+      "description": "Result day pe server down kyun hota hai — request se 503 tak",
+      "status": "published",
+      "short": "S05",
+      "stats": {
+        "views": 154
+      }
+    },
+    {
+      "id": "R08",
+      "title": "API kya hai? (travel app se samjho)",
+      "pillar": "System Design",
+      "type": "concept",
+      "theme": "light",
+      "concepts": [
+        "API as contract",
+        "REST",
+        "Endpoint",
+        "Query parameters",
+        "HTTP methods GET/POST/PUT/PATCH/DELETE",
+        "201 Created",
+        "Idempotency",
+        "API key header",
+        "401 Unauthorized",
+        "429 Too Many Requests",
+        "JSON",
+        "Parallel API calls"
+      ],
+      "description": "Travel app ek screen pe saari airlines kaise dikhata hai — endpoint, methods, idempotency, 401/429, JSON",
+      "length": "2:52",
+      "folder": "reels/R08-API-Kya-Hai",
+      "status": "rendered",
+      "idea": "RI-45",
+      "short": "S06",
+      "cover": "cover.png (channel grid style, light)"
+    }
+  ],
+  "shorts": [
+    {
+      "id": "S01",
+      "reel": "R02",
+      "title": "SQL Query Production Mein Slow Kyun? 🤯 | Database Indexing #Shorts",
+      "status": "published",
+      "stats": {
+        "views": 46
+      }
+    },
+    {
+      "id": "S02",
+      "reel": "R03",
+      "title": "Can a PDF Trick ChatGPT? 😳 | Prompt Injection Explained in Hindi #Shorts",
+      "status": "published",
+      "stats": {
+        "views": 27
+      }
+    },
+    {
+      "id": "S03",
+      "reel": "R05",
+      "title": "Java Stack vs Heap Memory – 2 Minute mein Clear! #Shorts",
+      "status": "published",
+      "stats": {
+        "views": 44
+      }
+    },
+    {
+      "id": "S04",
+      "reel": "R06",
+      "title": "Tatkal ticket milna namumkin kyun hai? 😰🚂 #shorts #indianrailways #irctc",
+      "status": "published",
+      "stats": {
+        "views": 401
+      }
+    },
+    {
+      "id": "S05",
+      "reel": "R07",
+      "title": "Server Down Kyun Hota Hai? Request, Packets, 404 vs 503 Simple Hindi Mein",
+      "status": "published",
+      "stats": {
+        "views": 82
+      }
+    },
+    {
+      "id": "S06",
+      "title": "API kya hai? REST API Hindi mein | GET, POST, PUT, PATCH",
+      "folder": "shorts/S06-API-Kya-Hai",
+      "status": "ready",
+      "relatedVideo": "S05",
+      "reel": "R08"
+    }
+  ],
+  "videos": [
+    {
+      "id": "YT01",
+      "title": "IRCTC Tatkal System Design 🚆 | 10 Baje Lakhon Users Kaise Handle Hote Hain?",
+      "pillar": "System Design",
+      "length": "17:16",
+      "linked": [
+        "R06",
+        "S04"
+      ],
+      "status": "published",
+      "publishedOn": "2026-10-23",
+      "stats": {
+        "views": 58
+      }
+    }
+  ],
+  "archive": [
+    {
+      "title": "API reel (old)",
+      "folder": "_archive/API-Reel",
+      "note": "redo"
+    },
+    {
+      "title": "Live Tracking reel (old)",
+      "folder": "_archive/Live-Tracking-Reel",
+      "note": "redo"
+    },
+    {
+      "title": "GitHub Repos reel",
+      "folder": "_archive/GitHub-Repos-Reel"
+    },
+    {
+      "title": "Claude Git reel",
+      "folder": "_archive/Claude-Git-Reel"
+    }
+  ],
+  "usedLines": {
+    "save": [
+      "Is reel ko save kar lo 📌, kyunki interview mein sabse pehla sawaal yahi hota hai.",
+      "Save kar lo 📌, agli baar koi meeting mein 'API' bole toh tum blank nahi dikhoge.",
+      "(R08 repeat of the API meeting save line — voiceover se aaya, next reel mein naya likhna)"
+    ],
+    "send": [
+      "Us dost ko share kar do jo roz flight ka price check karta hai par kabhi book nahi karta. (R08)"
+    ],
+    "quiz": [
+      "Booking mein sirf seat number badalna hai, toh kaunsa method? PUT ya PATCH. (R08)"
+    ],
+    "follow": [
+      "Aise hi concepts simple way mein samajhne ke liye follow kar lo. Ye POST request hai, ek hi baar dabana. (R08)"
+    ]
+  },
+  "reelIdeas": [
+    {
+      "id": "RI-01",
+      "topPick": 1,
+      "title": "₹10 ka UPI 2 second mein kaise pahunchta hai? PhonePe → NPCI → Bank",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Case study",
+      "hook": "Everyone uses it daily; nobody knows the path",
+      "keyPoints": "PSP app, NPCI switch, VPA→account resolution, payer/payee bank, debit then credit, PIN encrypted on device",
+      "why": "Same Indian-app formula as Tatkal; record 24.51B txns/month (Aug 2026) gives a fresh news peg",
+      "difficulty": "M",
+      "sources": "✅ NPCI docs + monthly data",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-02",
+      "topPick": 2,
+      "title": "Paise kat gaye, payment fail? UPI 'pending' ka asli sach",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Case study + myth-buster",
+      "hook": "Universal pain point, shareable to family",
+      "keyPoints": "Timeouts, transaction status check API, idempotency, reversal/auto-refund, why 'deemed success' exists",
+      "why": "Non-tech audience shares pain-point explainers; bridges to idempotency concept",
+      "difficulty": "M",
+      "sources": "⚠️ check NPCI/RBI TAT rules before quoting days",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-03",
+      "topPick": 3,
+      "title": "6 crore log ek saath match — Hotstar crash kyun nahi hota?",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Case study",
+      "hook": "Cricket + scale number",
+      "keyPoints": "HLS/DASH segments, multi-CDN, pre-warming and 'ladder' scaling vs autoscaling lag, graceful degradation ('panic mode'), 10–30s latency buffer",
+      "why": "Cricket is India's biggest shared moment; ties to IPL auction (Dec) and IPL (Mar–May)",
+      "difficulty": "M",
+      "sources": "✅ Hotstar/AWS talks; ⚠️ verify 65.2M figure",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-04",
+      "topPick": 4,
+      "title": "Delivery boy ka bike map pe live kaise chalta hai? (Swiggy/Zomato) – REDO",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Case study",
+      "hook": "Planned redo; everyone watches the icon",
+      "keyPoints": "GPS pings every few sec, WebSocket vs polling, Redis GEO/geohash, Kafka event stream, ETA recompute",
+      "why": "Already planned; strongest everyday-visual case study",
+      "difficulty": "M",
+      "sources": "⚠️ Swiggy Bytes + generic design",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-05",
+      "topPick": 5,
+      "title": "Sale mein 100 iPhone, 10 lakh log — 101 wala order kyun nahi hota? (Flipkart)",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Case study",
+      "hook": "Flash-sale FOMO",
+      "keyPoints": "Inventory decrement atomicity, Redis DECR / optimistic locking, queues, virtual waiting room",
+      "why": "Flash sales recur (Republic Day sales, BBD); interview classic",
+      "difficulty": "M",
+      "sources": "✅ Aerospike/Flipkart talks for scale; inventory logic generic",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-06",
+      "topPick": null,
+      "title": "BookMyShow pe seat 10 min ke liye 'hold' kaise hoti hai?",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Case study / interview Q",
+      "hook": "Movie night relatability",
+      "keyPoints": "Seat lock with TTL in Redis, distributed lock, release on timeout, double-booking prevention",
+      "why": "Top-5 LLD/HLD interview question; strong analogy",
+      "difficulty": "M",
+      "sources": "❌ generic design (say 'typical design')",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-07",
+      "topPick": null,
+      "title": "Flipkart Big Billion Day 2014: jab site hi baith gayi",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Story case study",
+      "hook": "Failure stories hook harder than success",
+      "keyPoints": "Capacity planning, load testing, what broke, how BBD became multi-day",
+      "why": "Storytelling + Indian brand; low competition",
+      "difficulty": "E",
+      "sources": "⚠️ news coverage of 2014",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-08",
+      "topPick": null,
+      "title": "Zomato 'biryani' search 10 crore baar/din — fast kaise?",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Case study",
+      "hook": "Search is magic",
+      "keyPoints": "Apache Solr, SolrCloud, sharding by locality (~95% single-shard), latency gains",
+      "why": "Rare case with a primary engineering-blog source",
+      "difficulty": "M",
+      "sources": "✅ Zomato blog",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-09",
+      "topPick": null,
+      "title": "Zomato ne database kyun badla? 4× fast, 50% sasta",
+      "pillar": "Database",
+      "series": "Desi App Ka Backend",
+      "format": "Case study (DB)",
+      "hook": "Cost-saving numbers",
+      "keyPoints": "TiDB→DynamoDB, dual-write migration, zero-downtime, NoSQL access patterns",
+      "why": "Concrete numbers from primary source; bridges to SQL vs NoSQL",
+      "difficulty": "M",
+      "sources": "✅ AWS DB blog",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-10",
+      "topPick": null,
+      "title": "Nearest Rapido/Uber driver 3 second mein kaise milta hai?",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Case study",
+      "hook": "Everyday commute",
+      "keyPoints": "Geohash/H3 grid, nearby search, matching, surge",
+      "why": "Very relatable; Uber's H3 is open-source",
+      "difficulty": "M",
+      "sources": "⚠️ Uber blog; Ola/Rapido ❌",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-11",
+      "topPick": null,
+      "title": "WhatsApp ka ✓ ✓✓ aur blue tick — peeche kya chal raha hai?",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Case study",
+      "hook": "Universal",
+      "keyPoints": "Store-and-forward, delivery/read acks, offline queue, E2E encryption (Signal protocol)",
+      "why": "Huge non-tech reach",
+      "difficulty": "M",
+      "sources": "⚠️ WhatsApp security whitepaper",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-12",
+      "topPick": null,
+      "title": "OTP late kyun aata hai? (aur 'Resend' dabane se kya hota hai)",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Case study / myth-buster",
+      "hook": "Daily frustration",
+      "keyPoints": "SMS gateway → telecom route, TRAI DLT templates, retries, rate limits, TOTP vs SMS",
+      "why": "Shareable to parents; low competition",
+      "difficulty": "E",
+      "sources": "⚠️ TRAI DLT docs",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-13",
+      "topPick": null,
+      "title": "Zepto 10 minute: tech hai ya dark store ka jugaad?",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Case study / myth-buster",
+      "hook": "Myth-busting a famous promise",
+      "keyPoints": "Dark stores within ~1.5–3 km, demand forecasting, picking <1–2 min, rider assignment",
+      "why": "Hot topic, but sources weak; frame as 'operations > algorithms'",
+      "difficulty": "M",
+      "sources": "❌ third-party only; mention reported branding change (Jan 2026)",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-14",
+      "topPick": null,
+      "title": "Instagram tumhe yahi reel kyun dikha raha hai?",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Concept / case study",
+      "hook": "Meta-hook on the platform itself",
+      "keyPoints": "Candidate generation → ranking → signals (watch time, shares)",
+      "why": "High curiosity; risky claims",
+      "difficulty": "M",
+      "sources": "⚠️ Meta transparency posts only",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-15",
+      "topPick": null,
+      "title": "YouTube ko kaise pata tum agla kya dekhoge?",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Case study",
+      "hook": "Same curiosity",
+      "keyPoints": "Two-stage recommender (candidate gen + ranking), embeddings",
+      "why": "Pairs with AI pillar",
+      "difficulty": "Hd",
+      "sources": "✅ Google 2016 paper",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-16",
+      "topPick": null,
+      "title": "Google Maps ko traffic kaise pata chalta hai?",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Case study",
+      "hook": "Red/orange lines everyone sees",
+      "keyPoints": "Crowdsourced anonymized location, speed aggregation, ETA ML",
+      "why": "Broad appeal",
+      "difficulty": "E",
+      "sources": "⚠️ Google blog",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-17",
+      "topPick": null,
+      "title": "DigiLocker document 'asli' kaise maana jaata hai?",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Case study",
+      "hook": "Govt tech pride",
+      "keyPoints": "Issuer-signed docs, PKI/digital signature, consent",
+      "why": "DPI pride angle; low competition",
+      "difficulty": "M",
+      "sources": "⚠️ official docs only",
+      "priority": "L",
+      "status": "idea"
+    },
+    {
+      "id": "RI-18",
+      "topPick": null,
+      "title": "Tatkal Part 2: Waiting list number kaise calculate hota hai?",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Follow-up case study",
+      "hook": "Follow-up to your top reel",
+      "keyPoints": "Quota buckets, RAC, cancellations, queueing",
+      "why": "Follow-ups to winners convert existing viewers",
+      "difficulty": "M",
+      "sources": "⚠️ IRCTC rules public",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-19",
+      "topPick": 6,
+      "title": "Caching = Mummy ka fridge 🧊 (aur baasi khaana = stale cache)",
+      "pillar": "System Design",
+      "series": "Jugaad System Design",
+      "format": "Concept",
+      "hook": "Analogy + humour",
+      "keyPoints": "Cache-aside, TTL, LRU eviction, cache stampede, Cache-Control header",
+      "why": "Core interview concept; fits style perfectly",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-20",
+      "topPick": null,
+      "title": "Load balancer = toll plaza ke 10 booth",
+      "pillar": "System Design",
+      "series": "Jugaad System Design",
+      "format": "Concept",
+      "hook": "Visual analogy",
+      "keyPoints": "L4 vs L7, round robin/least-conn, health checks, sticky sessions",
+      "why": "Evergreen interview; pairs with Hotstar/Flipkart",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-21",
+      "topPick": null,
+      "title": "Tatkal pe bots ko kaise roka jaata hai? Rate limiting",
+      "pillar": "System Design",
+      "series": "Jugaad System Design",
+      "format": "Concept + follow-up",
+      "hook": "Rides on Tatkal success",
+      "keyPoints": "Token bucket vs sliding window, HTTP 429, Retry-After header, per-IP/user keys",
+      "why": "Direct sequel to top reel; status-codes depth",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-22",
+      "topPick": null,
+      "title": "Kafka = shaadi ka buffet line",
+      "pillar": "System Design",
+      "series": "Jugaad System Design",
+      "format": "Concept",
+      "hook": "Analogy",
+      "keyPoints": "Producer/consumer, partitions, consumer groups, ordering by key, retries + DLQ",
+      "why": "Kafka shows up in Swiggy/Indian backend interviews",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-23",
+      "topPick": null,
+      "title": "Idempotency key: ek click, do payment kyun nahi?",
+      "pillar": "System Design",
+      "series": "Jugaad System Design",
+      "format": "Concept / interview Q",
+      "hook": "Double payment fear",
+      "keyPoints": "Idempotency-Key header, dedupe store with TTL, safe vs idempotent methods",
+      "why": "Bridges UPI reels to backend depth",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-24",
+      "topPick": null,
+      "title": "Database sharding = roll number se sections banana",
+      "pillar": "Database",
+      "series": "Jugaad System Design",
+      "format": "Concept",
+      "hook": "School analogy",
+      "keyPoints": "Shard key, range vs hash, hot partitions, resharding",
+      "why": "Follow-up to Indexing winner",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-25",
+      "topPick": null,
+      "title": "CDN = gali ka kirana vs city ka godown",
+      "pillar": "System Design",
+      "series": "Jugaad System Design",
+      "format": "Concept",
+      "hook": "Analogy",
+      "keyPoints": "Edge caching, origin, cache hit ratio, invalidation",
+      "why": "Pairs with Hotstar",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-26",
+      "topPick": null,
+      "title": "Vertical vs horizontal scaling: bada tiffin ya zyada tiffin?",
+      "pillar": "System Design",
+      "series": "Jugaad System Design",
+      "format": "Concept",
+      "hook": "Analogy",
+      "keyPoints": "Scale-up limits, stateless services, sessions",
+      "why": "Beginner-friendly",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-27",
+      "topPick": null,
+      "title": "CAP theorem: UPI balance vs Instagram likes",
+      "pillar": "System Design",
+      "series": "Jugaad System Design",
+      "format": "Concept",
+      "hook": "Indian examples",
+      "keyPoints": "Consistency vs availability under partition; eventual consistency",
+      "why": "Interview favourite; Indian examples rare",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-28",
+      "topPick": null,
+      "title": "Polling vs WebSocket vs SSE: 'Pahunche kya?' wala dost",
+      "pillar": "System Design",
+      "series": "Jugaad System Design",
+      "format": "Concept",
+      "hook": "Analogy",
+      "keyPoints": "Short/long polling, WebSocket full-duplex, SSE one-way; cost trade-offs",
+      "why": "Supports Swiggy redo",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-29",
+      "topPick": null,
+      "title": "Monolith vs microservices = joint family vs nuclear family",
+      "pillar": "System Design",
+      "series": "Jugaad System Design",
+      "format": "Concept / myth-buster",
+      "hook": "Desi humour",
+      "keyPoints": "Deploy independence, network cost, data ownership, when NOT to split",
+      "why": "Debate drives comments",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-30",
+      "topPick": null,
+      "title": "API Gateway = society ka security guard",
+      "pillar": "System Design",
+      "series": "Jugaad System Design",
+      "format": "Concept",
+      "hook": "Analogy",
+      "keyPoints": "Auth, rate limit, routing, aggregation",
+      "why": "Fits Spring Cloud Gateway",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-31",
+      "topPick": null,
+      "title": "Consistent hashing 60 sec mein",
+      "pillar": "System Design",
+      "series": "Jugaad System Design",
+      "format": "Concept",
+      "hook": "'Interviewers love this'",
+      "keyPoints": "Hash ring, virtual nodes, minimal remap",
+      "why": "Harder, smaller audience",
+      "difficulty": "Hd",
+      "sources": "✅",
+      "priority": "L",
+      "status": "idea"
+    },
+    {
+      "id": "RI-32",
+      "topPick": 7,
+      "title": "HashMap ke andar kya hota hai? (Interview ka favourite)",
+      "pillar": "Backend",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Interview Q",
+      "hook": "'Zyada tar freshers yahan atakte hain' (unverified % mat bolo)",
+      "keyPoints": "Buckets, hashCode/equals, collisions, treeify at 8, resize at 0.75 load factor",
+      "why": "Evergreen top Java question; same lane as Stack vs Heap",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-33",
+      "topPick": 8,
+      "title": "@Transactional laga diya, phir bhi rollback nahi hua? 😱",
+      "pillar": "Backend",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Interview Q / bug story",
+      "hook": "Real production trap",
+      "keyPoints": "Proxy-based AOP, self-invocation, private methods, checked exceptions not rolled back",
+      "why": "Recurring 2026 Spring interview question; few Hinglish reels",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-34",
+      "topPick": 9,
+      "title": "Garbage Collector: Java ka safai karamchari (Stack vs Heap Part 2)",
+      "pillar": "Backend",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Concept follow-up",
+      "hook": "Sequel to a winner",
+      "keyPoints": "Young/old gen, minor vs major GC, G1/ZGC, memory leak example",
+      "why": "Direct follow-up to 1,542-view reel",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-35",
+      "topPick": null,
+      "title": "401 vs 403: 'Kaun ho tum?' vs 'Andar nahi aa sakte'",
+      "pillar": "Backend",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Concept",
+      "hook": "Status-code humour",
+      "keyPoints": "AuthN vs AuthZ, WWW-Authenticate header, 404-masking",
+      "why": "Signature style (status codes + analogy)",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-36",
+      "topPick": null,
+      "title": "JWT vs Session = movie ticket vs haath pe stamp",
+      "pillar": "Backend",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Concept",
+      "hook": "Analogy",
+      "keyPoints": "Stateless tokens, signature, expiry, refresh tokens, logout problem",
+      "why": "Top auth interview Q",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-37",
+      "topPick": null,
+      "title": "N+1 query problem: 1 query ki jagah 101",
+      "pillar": "Backend",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Interview Q",
+      "hook": "Performance horror",
+      "keyPoints": "Lazy loading in JPA, JOIN FETCH, @EntityGraph, batch size",
+      "why": "Frequent Spring Data question",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-38",
+      "topPick": null,
+      "title": "String immutable kyun hai Java mein?",
+      "pillar": "Backend",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Interview Q",
+      "hook": "Classic",
+      "keyPoints": "String pool, security, hashing cache, thread-safety",
+      "why": "Evergreen fresher Q",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-39",
+      "topPick": null,
+      "title": "Java 21 virtual threads: 1 lakh threads, RAM safe?",
+      "pillar": "Backend",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Concept",
+      "hook": "Modern Java",
+      "keyPoints": "Platform vs virtual threads, blocking I/O, Spring Boot config flag",
+      "why": "Fresh, upgrade-driven demand",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-40",
+      "topPick": null,
+      "title": "Field injection mat karo — interviewer ne yahi poocha",
+      "pillar": "Backend",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Interview Q",
+      "hook": "Opinionated",
+      "keyPoints": "Constructor vs setter vs field, final fields, testability",
+      "why": "Common 2026 Spring Q",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-41",
+      "topPick": null,
+      "title": "Spring Boot itna magic kaise karta hai? Auto-configuration",
+      "pillar": "Backend",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Concept",
+      "hook": "'Magic' demystified",
+      "keyPoints": "Starters, @Conditional, AutoConfiguration.imports",
+      "why": "Core 2–3 YOE question",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-42",
+      "topPick": null,
+      "title": "LazyInitializationException: 'no session' ka matlab",
+      "pillar": "Backend",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Bug story",
+      "hook": "Real error screenshot",
+      "keyPoints": "Persistence context, lazy proxies, open-in-view, DTO projection",
+      "why": "Pain-point search term",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-43",
+      "topPick": null,
+      "title": "Sab API ka error ek jagah handle: @ControllerAdvice",
+      "pillar": "Backend",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Concept + code",
+      "hook": "Clean code",
+      "keyPoints": "@ExceptionHandler, ProblemDetail (RFC 9457), correct status codes",
+      "why": "Practical, save-worthy",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-44",
+      "topPick": null,
+      "title": "Actuator khula chhoda = ghar ki chaabi bahar",
+      "pillar": "Backend",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Security tip",
+      "hook": "Fear + fix",
+      "keyPoints": "/actuator/env, /heapdump exposure, management.endpoints config",
+      "why": "Security + Spring crossover",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-45",
+      "topPick": null,
+      "title": "API kya hai? Waiter wala example — REDO with status codes",
+      "pillar": "Backend",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Concept (planned redo)",
+      "hook": "Beginner entry point",
+      "keyPoints": "Request/response, methods, headers, JSON, idempotent methods",
+      "why": "Planned; feeder for all backend content",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "H",
+      "status": "done",
+      "madeAs": "R08"
+    },
+    {
+      "id": "RI-46",
+      "topPick": null,
+      "title": "@Async vs CompletableFuture — kab kya?",
+      "pillar": "Backend",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Interview Q",
+      "hook": "Comparison",
+      "keyPoints": "Thread pools, proxies, exception handling",
+      "why": "2026 guides list it",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "L",
+      "status": "idea"
+    },
+    {
+      "id": "RI-47",
+      "topPick": 10,
+      "title": "Index lagaya phir bhi slow? Composite index ka left-most rule",
+      "pillar": "Database",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Interview Q / follow-up",
+      "hook": "Sequel to Indexing winner",
+      "keyPoints": "(a,b,c) index usage, leftmost prefix, LIKE '%x', function on column kills index",
+      "why": "Follow-up to 1,630-view reel",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-48",
+      "topPick": 11,
+      "title": "ACID samjho UPI transfer se: paisa beech mein gaya kahan?",
+      "pillar": "Database",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Concept",
+      "hook": "Money at stake",
+      "keyPoints": "Atomicity, consistency, isolation, durability; commit/rollback; WAL",
+      "why": "UPI curiosity + DB interview staple",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-49",
+      "topPick": null,
+      "title": "Redis itna fast kyun hai?",
+      "pillar": "Database",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Concept",
+      "hook": "Speed curiosity",
+      "keyPoints": "In-memory, single-threaded event loop, data structures, persistence (RDB/AOF)",
+      "why": "Redis is in every backend JD",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-50",
+      "topPick": null,
+      "title": "SQL vs NoSQL: kab kaunsa? (Zomato example)",
+      "pillar": "Database",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Concept / case",
+      "hook": "Real migration",
+      "keyPoints": "Access patterns, joins vs denormalization, scaling",
+      "why": "Primary-source example",
+      "difficulty": "M",
+      "sources": "✅ AWS blog",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-51",
+      "topPick": null,
+      "title": "Dirty read, phantom read — isolation levels in 60 sec",
+      "pillar": "Database",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Interview Q",
+      "hook": "Scary names",
+      "keyPoints": "Read uncommitted → serializable; MySQL default REPEATABLE READ",
+      "why": "Common 1–3 YOE question",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-52",
+      "topPick": null,
+      "title": "Optimistic vs pessimistic locking (Flipkart stock example)",
+      "pillar": "Database",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Concept",
+      "hook": "Sale scenario",
+      "keyPoints": "@Version, SELECT … FOR UPDATE, retries",
+      "why": "Pairs with Flipkart reel",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-53",
+      "topPick": null,
+      "title": "EXPLAIN chalao, query ka X-ray dekho",
+      "pillar": "Database",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Concept + demo",
+      "hook": "Practical",
+      "keyPoints": "Full scan vs index scan, rows examined, key used",
+      "why": "Practical, save-worthy",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-54",
+      "topPick": null,
+      "title": "DELETE vs TRUNCATE vs DROP — interview mein confuse mat hona",
+      "pillar": "Database",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Interview Q",
+      "hook": "Quick-fire",
+      "keyPoints": "Rollback, triggers, DDL vs DML, identity reset",
+      "why": "Evergreen fresher Q",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-55",
+      "topPick": null,
+      "title": "Database connection pool = auto stand",
+      "pillar": "Database",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Concept",
+      "hook": "Analogy",
+      "keyPoints": "HikariCP, pool size, connection leak, timeouts",
+      "why": "Real prod issue",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-56",
+      "topPick": null,
+      "title": "Normalization 60 sec mein (1NF–3NF)",
+      "pillar": "Database",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Concept",
+      "hook": "Exam/interview",
+      "keyPoints": "Redundancy, anomalies",
+      "why": "Saturated; quick win only",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "L",
+      "status": "idea"
+    },
+    {
+      "id": "RI-57",
+      "topPick": null,
+      "title": "Singleton = ghar ka ek hi TV remote 📺",
+      "pillar": "Design Patterns",
+      "series": "Pattern Pe Pattern",
+      "format": "Concept / interview Q",
+      "hook": "Humour",
+      "keyPoints": "Lazy init, double-checked locking + volatile, enum singleton, Spring beans are singleton-scoped",
+      "why": "Most-asked pattern",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-58",
+      "topPick": null,
+      "title": "Strategy pattern: UPI, card ya COD — if-else hatao",
+      "pillar": "Design Patterns",
+      "series": "Pattern Pe Pattern",
+      "format": "Concept + code",
+      "hook": "Indian checkout",
+      "keyPoints": "Interface + implementations, Spring injection of List/Map of beans",
+      "why": "Practical Spring usage",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-59",
+      "topPick": null,
+      "title": "Observer pattern = YouTube bell icon 🔔",
+      "pillar": "Design Patterns",
+      "series": "Pattern Pe Pattern",
+      "format": "Concept",
+      "hook": "Meta-hook",
+      "keyPoints": "Subject/observers, Spring ApplicationEvent",
+      "why": "Easy, shareable",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-60",
+      "topPick": null,
+      "title": "Builder pattern = Subway sandwich",
+      "pillar": "Design Patterns",
+      "series": "Pattern Pe Pattern",
+      "format": "Concept",
+      "hook": "Analogy",
+      "keyPoints": "Telescoping constructors, Lombok @Builder",
+      "why": "Frequent in code reviews",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-61",
+      "topPick": null,
+      "title": "Factory pattern = chai tapri order",
+      "pillar": "Design Patterns",
+      "series": "Pattern Pe Pattern",
+      "format": "Concept",
+      "hook": "Analogy",
+      "keyPoints": "Creation logic centralised, Spring BeanFactory",
+      "why": "Pairs with Strategy",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-62",
+      "topPick": null,
+      "title": "SOLID ka 'S' aur 'O' — 60 sec",
+      "pillar": "Design Patterns",
+      "series": "Pattern Pe Pattern",
+      "format": "Concept",
+      "hook": "Interview staple",
+      "keyPoints": "SRP, OCP with examples",
+      "why": "Commonly asked",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-63",
+      "topPick": null,
+      "title": "LLD interview: Parking lot 90 sec mein",
+      "pillar": "Design Patterns",
+      "series": "Pattern Pe Pattern",
+      "format": "Interview Q",
+      "hook": "Classic LLD",
+      "keyPoints": "Entities, enums, strategy for pricing",
+      "why": "Feeds long-form",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-64",
+      "topPick": null,
+      "title": "Proxy pattern: isliye @Transactional fail hua tha",
+      "pillar": "Design Patterns",
+      "series": "Pattern Pe Pattern",
+      "format": "Concept bridge",
+      "hook": "Ties to @Transactional reel",
+      "keyPoints": "JDK dynamic proxy vs CGLIB",
+      "why": "Smart cross-link",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "L",
+      "status": "idea"
+    },
+    {
+      "id": "RI-65",
+      "topPick": 12,
+      "title": "MCP kya hai? AI ka USB-C port 🔌",
+      "pillar": "AI",
+      "series": "AI Ka Andar Ka Scene",
+      "format": "Concept",
+      "hook": "New standard everyone mentions",
+      "keyPoints": "Host/client/server, tools/resources/prompts, N×M integration problem; 2026 stateless spec",
+      "why": "Apna College's MCP explainer ~314K views in week 1; 97M+ monthly SDK downloads (Anthropic, Dec 2025)",
+      "difficulty": "M",
+      "sources": "✅ spec + Wikipedia",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-66",
+      "topPick": 13,
+      "title": "RAG = open-book exam 📖",
+      "pillar": "AI",
+      "series": "AI Ka Andar Ka Scene",
+      "format": "Concept",
+      "hook": "Analogy",
+      "keyPoints": "Chunking, embeddings, vector search, grounding, citations, why hallucination drops",
+      "why": "Core LLM concept, few Hinglish shorts",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-67",
+      "topPick": 14,
+      "title": "Vibe coding se app bana liya? Ye 3 security galtiyan check karo",
+      "pillar": "AI",
+      "series": "AI + Dev Workflow (Honest Test)",
+      "format": "AI workflow / myth-buster",
+      "hook": "Fear + fix; sequel to Prompt Injection",
+      "keyPoints": "Hard-coded keys, hallucinated packages (slopsquatting), missing auth checks",
+      "why": "Sonar State of Code (Jan 2026): 96% devs don't fully trust AI code, only 48% always check before commit; security angle got engagement",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-68",
+      "topPick": null,
+      "title": "AI agent vs chatbot: farak kya hai?",
+      "pillar": "AI",
+      "series": "AI Ka Andar Ka Scene",
+      "format": "Concept",
+      "hook": "Buzzword clarity",
+      "keyPoints": "Tool calling, loop (plan→act→observe), memory, guardrails",
+      "why": "High interest in 'agentic AI'",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-69",
+      "topPick": null,
+      "title": "Prompt injection Part 2: email padhke AI agent hack",
+      "pillar": "AI",
+      "series": "AI Ka Andar Ka Scene",
+      "format": "AI security",
+      "hook": "Sequel",
+      "keyPoints": "Indirect injection, tool permissions, human-in-loop",
+      "why": "Prompt Injection reel had engaged likes",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-70",
+      "topPick": null,
+      "title": "Claude Code se Spring Boot API 10 min mein — par review zaroori",
+      "pillar": "AI",
+      "series": "AI + Dev Workflow (Honest Test)",
+      "format": "AI workflow",
+      "hook": "Real result, honest",
+      "keyPoints": "Spec → generate → tests → review diff; what it got wrong",
+      "why": "Claude Code ~39% work adoption (JetBrains, mid-2026)",
+      "difficulty": "M",
+      "sources": "✅ own demo",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-71",
+      "topPick": null,
+      "title": "Hindi mein ChatGPT use karna mehenga kyun? Tokens ka sach",
+      "pillar": "AI",
+      "series": "AI Ka Andar Ka Scene",
+      "format": "Concept",
+      "hook": "Desi-specific twist",
+      "keyPoints": "Tokenization, Devanagari vs Roman token counts, context window cost",
+      "why": "Unique India angle; show live tokenizer demo",
+      "difficulty": "M",
+      "sources": "⚠️ demo-verify per model",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-72",
+      "topPick": null,
+      "title": "AI jhooth kyun bolta hai? Hallucination 60 sec",
+      "pillar": "AI",
+      "series": "AI Ka Andar Ka Scene",
+      "format": "Concept",
+      "hook": "Relatable",
+      "keyPoints": "Next-token prediction, no ground truth, RAG/grounding fixes",
+      "why": "Broad audience",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-73",
+      "topPick": null,
+      "title": "Fine-tuning vs RAG vs prompt — kab kya?",
+      "pillar": "AI",
+      "series": "AI Ka Andar Ka Scene",
+      "format": "Concept",
+      "hook": "Decision guide",
+      "keyPoints": "Cost, freshness, behaviour vs knowledge",
+      "why": "Interview + practical",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-74",
+      "topPick": null,
+      "title": "Embeddings: 'kuch spicy' search karne pe biryani kaise aayi?",
+      "pillar": "AI",
+      "series": "AI Ka Andar Ka Scene",
+      "format": "Concept",
+      "hook": "Food search",
+      "keyPoints": "Vectors, cosine similarity, semantic search",
+      "why": "Pairs with Zomato search",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-75",
+      "topPick": null,
+      "title": "Non-dev ke liye: 1 prompt se monthly expense sheet",
+      "pillar": "AI",
+      "series": "AI + Dev Workflow (Honest Test)",
+      "format": "AI workflow (non-dev)",
+      "hook": "Concrete result",
+      "keyPoints": "Structured prompt, CSV output, verification",
+      "why": "Concrete-result workflows beat tool lists",
+      "difficulty": "E",
+      "sources": "✅ own demo",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-76",
+      "topPick": null,
+      "title": "Google Antigravity vs Claude Code vs Cursor — Java dev ke liye honest test",
+      "pillar": "AI",
+      "series": "AI + Dev Workflow (Honest Test)",
+      "format": "Tool comparison (with test)",
+      "hook": "Real task, real score",
+      "keyPoints": "Same task, time, errors",
+      "why": "India Antigravity adoption 15% (JetBrains)",
+      "difficulty": "M",
+      "sources": "own test",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-77",
+      "topPick": 15,
+      "title": "'ATS 75% resume reject karta hai' — ye jhooth hai",
+      "pillar": "Jobs",
+      "series": "Naukri Ka Sach",
+      "format": "Myth-buster",
+      "hook": "Contrarian",
+      "keyPoints": "Parsing failures, knockout questions, recruiter keyword search; recruiter survey: 92% say ATS doesn't auto-reject, 8% use AI score as hard filter",
+      "why": "Myth-busting + anxiety topic; GoodSpace avg Indian resume score 64/100",
+      "difficulty": "E",
+      "sources": "✅ multiple 2026 sources",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-78",
+      "topPick": null,
+      "title": "Fresher resume ki 5 galtiyan jo maine 100 resume mein dekhi",
+      "pillar": "Jobs",
+      "series": "Naukri Ka Sach",
+      "format": "Career tip",
+      "hook": "Specific, practical",
+      "keyPoints": "Single-column, metrics in projects, keywords from JD, GitHub links, no photo/table",
+      "why": "Resume content is save-heavy (title claim sirf tab jab sach mein 100 dekhe ho)",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-79",
+      "topPick": null,
+      "title": "Product startup 0–3 YOE interview mein ye poochte hain",
+      "pillar": "Jobs",
+      "series": "Naukri Ka Sach",
+      "format": "Interview Q",
+      "hook": "Insider",
+      "keyPoints": "LLD + Spring + SQL + 1 HLD, sample Qs (Kafka idempotency etc.)",
+      "why": "Interview content > job lists on your page",
+      "difficulty": "M",
+      "sources": "⚠️ interview-experience posts",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-80",
+      "topPick": null,
+      "title": "DSA vs System Design: fresher ko kitna kya?",
+      "pillar": "Jobs",
+      "series": "Naukri Ka Sach",
+      "format": "Career tip / debate",
+      "hook": "Comment-bait done right",
+      "keyPoints": "Round structure by company type; LLD for 1–3 YOE",
+      "why": "Perennial debate; drives comments",
+      "difficulty": "E",
+      "sources": "opinion + interview data",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-81",
+      "topPick": null,
+      "title": "Java Backend Roadmap 2027 — 60 sec",
+      "pillar": "Jobs",
+      "series": "Naukri Ka Sach",
+      "format": "Roadmap",
+      "hook": "New-year search",
+      "keyPoints": "Java → Spring Boot → SQL/Redis → Docker → system design → AI tooling",
+      "why": "Roadmap videos proven (Harkirat 597K)",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-82",
+      "topPick": null,
+      "title": "Naukri data: IT -4%, AI/ML +20% — Java dev kya kare?",
+      "pillar": "Jobs",
+      "series": "Naukri Ka Sach",
+      "format": "Data explainer",
+      "hook": "Fresh numbers",
+      "keyPoints": "Read JobSpeak correctly (listing index, not hires); AI-ready backend skills",
+      "why": "Data-led, not fear-led",
+      "difficulty": "E",
+      "sources": "✅ Naukri JobSpeak",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-83",
+      "topPick": null,
+      "title": "Referral maangne ka message jo reply laata hai",
+      "pillar": "Jobs",
+      "series": "Naukri Ka Sach",
+      "format": "Career tip",
+      "hook": "Template",
+      "keyPoints": "Short, specific role + JD link + 2 proof points",
+      "why": "Save/share-heavy",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-84",
+      "topPick": null,
+      "title": "'Tell me about your project' — STAR method Hinglish",
+      "pillar": "Jobs",
+      "series": "Naukri Ka Sach",
+      "format": "Interview tip",
+      "hook": "Universal question",
+      "keyPoints": "Situation-Task-Action-Result with numbers",
+      "why": "Universal pain",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-85",
+      "topPick": null,
+      "title": "Fake job offer pehchano: 3 red flags",
+      "pillar": "Jobs",
+      "series": "Naukri Ka Sach",
+      "format": "Awareness",
+      "hook": "Protective",
+      "keyPoints": "Payment requests, Gmail IDs, no interview",
+      "why": "Shareable; careful framing",
+      "difficulty": "E",
+      "sources": "⚠️",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-86",
+      "topPick": null,
+      "title": "google.com likhne ke baad 1 second mein kya hota hai?",
+      "pillar": "DevOps & Security",
+      "series": "Jugaad System Design",
+      "format": "Concept",
+      "hook": "Classic interview Q",
+      "keyPoints": "DNS lookup, TCP, TLS, HTTP request, response",
+      "why": "Follow-up to Server Down; evergreen",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-87",
+      "topPick": null,
+      "title": "Docker = tiffin box 🍱 (sab saath pack)",
+      "pillar": "DevOps & Security",
+      "series": "Jugaad System Design",
+      "format": "Concept",
+      "hook": "Analogy",
+      "keyPoints": "Image vs container, Dockerfile, 'works on my machine'",
+      "why": "Every backend JD",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "RI-88",
+      "topPick": null,
+      "title": "Git rebase vs merge = family WhatsApp group drama",
+      "pillar": "DevOps & Security",
+      "series": "Jugaad System Design",
+      "format": "Concept",
+      "hook": "Humour",
+      "keyPoints": "Linear history, conflicts, never rebase shared branches",
+      "why": "Common confusion",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-89",
+      "topPick": null,
+      "title": "Screen-share karte hi UPI fraud kaise hota hai — tech samjho",
+      "pillar": "DevOps & Security",
+      "series": "Desi App Ka Backend",
+      "format": "Cyber awareness",
+      "hook": "Protect parents",
+      "keyPoints": "Remote-access apps, OTP/PIN never shared, collect-request scams",
+      "why": "Non-tech share potential; ties to UPI series",
+      "difficulty": "E",
+      "sources": "⚠️ verify RBI/NPCI advisories",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-90",
+      "topPick": null,
+      "title": "HTTPS ka taala 🔒 kya guarantee karta hai (aur kya nahi)",
+      "pillar": "DevOps & Security",
+      "series": "Jugaad System Design",
+      "format": "Concept / myth-buster",
+      "hook": "Myth: padlock = safe site",
+      "keyPoints": "TLS handshake, certificates, phishing sites also have HTTPS",
+      "why": "Security awareness + depth",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-91",
+      "topPick": null,
+      "title": "Company tumhara password nahi dekh sakti — hashing",
+      "pillar": "DevOps & Security",
+      "series": "Jugaad System Design",
+      "format": "Concept",
+      "hook": "Trust",
+      "keyPoints": "bcrypt, salt, why 'forgot password' resets",
+      "why": "Non-tech friendly",
+      "difficulty": "E",
+      "sources": "✅",
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "RI-92",
+      "topPick": null,
+      "title": "Kubernetes 60 sec: ship ka captain",
+      "pillar": "DevOps & Security",
+      "series": "Jugaad System Design",
+      "format": "Concept",
+      "hook": "Analogy",
+      "keyPoints": "Pods, deployments, autoscaling (HPA)",
+      "why": "Pairs with Hotstar",
+      "difficulty": "M",
+      "sources": "✅",
+      "priority": "L",
+      "status": "idea"
+    },
+    {
+      "id": "RI-93",
+      "topPick": null,
+      "title": "PUT vs PATCH vs POST: interview mein kahan phaste ho",
+      "pillar": "Backend",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Interview Q",
+      "hook": "R08 quiz ka jawab: 'seat number badalna hai, PUT ya PATCH?'",
+      "keyPoints": "Full replace vs partial update, idempotency (PUT yes, PATCH not guaranteed, POST no), 200/201/204, JSON Merge Patch",
+      "why": "R08 quiz comments ka answer reel; interview favourite",
+      "difficulty": "M",
+      "sources": "✅ RFC 9110 + RFC 5789",
+      "priority": "H",
+      "status": "idea",
+      "source": "added 2026-10-24: follow-up of R08 (API kya hai): quiz answer"
+    },
+    {
+      "id": "RI-94",
+      "topPick": null,
+      "title": "API versioning: /v1 aur /v2 saath kyun chalte hain?",
+      "pillar": "Backend",
+      "series": "Interview Mein Phas Gaye",
+      "format": "Concept",
+      "hook": "Naya feature aaya, phir bhi purana app kyun nahi toota?",
+      "keyPoints": "URI vs header versioning, backward compatibility, deprecation window, breaking vs non-breaking change",
+      "why": "R08 se cut hua segment; natural next step",
+      "difficulty": "M",
+      "sources": "typical design (no company claim)",
+      "priority": "M",
+      "status": "idea",
+      "source": "added 2026-10-24: follow-up of R08 (API kya hai): segment cut for length"
+    },
+    {
+      "id": "RI-95",
+      "topPick": null,
+      "title": "REST vs GraphQL: food app ki screen ko kaunsa chahiye?",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Concept",
+      "hook": "Ek screen, 5 API calls ya 1 query?",
+      "keyPoints": "Over/under-fetching, single endpoint, schema, caching trade-off, when REST is still better",
+      "why": "API reel ke baad next question; \"likely design\" bolo, company claim nahi",
+      "difficulty": "M",
+      "sources": "GraphQL spec; typical design",
+      "priority": "M",
+      "status": "idea",
+      "source": "added 2026-10-24: follow-up of R08 (API kya hai)"
+    }
+  ],
+  "videoIdeas": [
+    {
+      "id": "VI-01",
+      "top8": true,
+      "title": "UPI System Design in Hindi | PhonePe se Bank tak ₹1 ka safar",
+      "pillar": "System Design",
+      "length": "18–22 min",
+      "chapters": [
+        "What happens in 2 sec",
+        "Actors: PSP, NPCI, banks",
+        "Pay vs collect flow + sequence diagram",
+        "Failures, pending, refunds, idempotency",
+        "Scale: 24B txns/month, 800M/day",
+        "Interview Qs"
+      ],
+      "why": "Indian-app SD is the proven winner; Harkirat's UPI angle outperformed; strong NPCI sources",
+      "feederReels": [
+        "RI-01",
+        "RI-02",
+        "RI-23",
+        "RI-48",
+        "RI-89"
+      ],
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "VI-02",
+      "top8": true,
+      "title": "Hotstar IPL Live Streaming System Design | Crore log ek saath",
+      "pillar": "System Design",
+      "length": "18–20 min",
+      "chapters": [
+        "Records + why autoscaling fails",
+        "Video pipeline: encode → segments → CDN",
+        "Pre-warming/ladder scaling",
+        "Panic mode/graceful degradation",
+        "Spot instances + cost",
+        "Design it yourself"
+      ],
+      "why": "Cricket peaks; publish Feb–early Mar before IPL 2027",
+      "feederReels": [
+        "RI-03",
+        "RI-20",
+        "RI-25",
+        "RI-92"
+      ],
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "VI-03",
+      "top8": true,
+      "title": "Swiggy/Zomato Live Order Tracking System Design (Hindi) – Redo",
+      "pillar": "System Design",
+      "length": "15–18 min",
+      "chapters": [
+        "Requirements",
+        "Location ingestion (GPS pings)",
+        "Storage: Redis GEO",
+        "Push: WebSocket vs SSE",
+        "ETA + Kafka events",
+        "Failure cases"
+      ],
+      "why": "Planned redo; daily-use app",
+      "feederReels": [
+        "RI-04",
+        "RI-22",
+        "RI-28"
+      ],
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "VI-04",
+      "top8": true,
+      "title": "Flipkart Big Billion Days Flash Sale System Design | Inventory, Queue, Cache",
+      "pillar": "System Design",
+      "length": "18–20 min",
+      "chapters": [
+        "2014 crash story",
+        "Traffic shape of a sale",
+        "Inventory consistency (locks, Redis)",
+        "Virtual waiting room + queues",
+        "Caching + Aerospike at 90M QPS",
+        "Interview version"
+      ],
+      "why": "Flash sales recur (Republic Day, BBD); interview classic",
+      "feederReels": [
+        "RI-05",
+        "RI-07",
+        "RI-52",
+        "RI-19"
+      ],
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "VI-05",
+      "top8": true,
+      "title": "Spring Boot Interview Questions in Hindi (2–3 YOE) | 25 Real Questions",
+      "pillar": "Backend",
+      "length": "25–35 min",
+      "chapters": [
+        "Core DI & beans",
+        "Auto-config & starters",
+        "JPA traps (N+1, lazy)",
+        "@Transactional pitfalls",
+        "Security/JWT/Actuator",
+        "Scenario Qs"
+      ],
+      "why": "Spring interview pages updated for 2026; Java JD demand",
+      "feederReels": [
+        "RI-33",
+        "RI-37",
+        "RI-40",
+        "RI-41",
+        "RI-42",
+        "RI-43",
+        "RI-44"
+      ],
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "VI-06",
+      "top8": true,
+      "title": "Database Indexing se Sharding tak | Complete in One Video (Hindi)",
+      "pillar": "Database",
+      "length": "35–45 min",
+      "chapters": [
+        "Indexing recap (B+tree)",
+        "Composite indexes + EXPLAIN",
+        "Transactions/ACID/isolation",
+        "Replication",
+        "Sharding + hot partitions",
+        "Case: Zomato search & billing"
+      ],
+      "why": "One-shot SQL formats proven (Apna SQL 22M); your indexing reel is a winner",
+      "feederReels": [
+        "RI-47",
+        "RI-48",
+        "RI-51",
+        "RI-53",
+        "RI-24",
+        "RI-09"
+      ],
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "VI-07",
+      "top8": true,
+      "title": "MCP, RAG aur AI Agents in Hindi | Java (Spring AI) se MCP Server banao",
+      "pillar": "AI",
+      "length": "25–30 min",
+      "chapters": [
+        "LLM basics: tokens, context",
+        "RAG explained + demo",
+        "Agents: tool calling loop",
+        "MCP architecture",
+        "Build MCP server in Spring Boot",
+        "Security: prompt injection"
+      ],
+      "why": "MCP demand proven (Apna ~314K/wk); free Hinglish Spring AI content is a gap",
+      "feederReels": [
+        "RI-65",
+        "RI-66",
+        "RI-68",
+        "RI-69",
+        "RI-71"
+      ],
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "VI-08",
+      "top8": true,
+      "title": "Java Backend Developer Roadmap 2027 | Fresher se Job tak (Hindi)",
+      "pillar": "Jobs",
+      "length": "15–20 min",
+      "chapters": [
+        "What companies hire for in 2026–27 (data)",
+        "Java core",
+        "Spring Boot + SQL + Redis",
+        "Docker/cloud basics",
+        "System design + AI tooling",
+        "Projects + resume"
+      ],
+      "why": "Roadmaps proven; New Year search peak",
+      "feederReels": [
+        "RI-81",
+        "RI-82",
+        "RI-78",
+        "RI-80"
+      ],
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "VI-09",
+      "top8": false,
+      "title": "System Design for Beginners in Hindi | Complete in One Video",
+      "pillar": "System Design",
+      "length": "45–60 min",
+      "chapters": [
+        "Client-server, DNS",
+        "Scaling",
+        "Load balancers",
+        "Caching/CDN",
+        "Databases/sharding",
+        "Queues + a full design"
+      ],
+      "why": "Big 'complete' search term; compounding asset",
+      "feederReels": [
+        "RI-19",
+        "RI-20",
+        "RI-21",
+        "RI-22",
+        "RI-23",
+        "RI-24",
+        "RI-25",
+        "RI-26",
+        "RI-27",
+        "RI-28",
+        "RI-29",
+        "RI-30",
+        "RI-31",
+        "RI-86"
+      ],
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "VI-10",
+      "top8": false,
+      "title": "BookMyShow Seat Booking System Design | Double booking kaise rokein",
+      "pillar": "System Design",
+      "length": "18 min",
+      "chapters": [
+        "Requirements",
+        "Seat lock with TTL",
+        "Distributed locks",
+        "Payment + timeout",
+        "Concurrency tests",
+        "Interview follow-ups"
+      ],
+      "why": "Classic interview problem",
+      "feederReels": [
+        "RI-06",
+        "RI-52"
+      ],
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "VI-11",
+      "top8": false,
+      "title": "WhatsApp System Design in Hindi",
+      "pillar": "System Design",
+      "length": "20 min",
+      "chapters": [
+        "1:1 messaging",
+        "Delivery/read receipts",
+        "Offline + store-and-forward",
+        "Groups fan-out",
+        "E2E encryption basics",
+        "Media"
+      ],
+      "why": "Evergreen interview topic",
+      "feederReels": [
+        "RI-11",
+        "RI-28"
+      ],
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "VI-12",
+      "top8": false,
+      "title": "Uber/Ola/Rapido Driver Matching System Design",
+      "pillar": "System Design",
+      "length": "18 min",
+      "chapters": [
+        "Location index (geohash/H3)",
+        "Nearby search",
+        "Matching",
+        "Surge",
+        "Trip state machine",
+        "Scale"
+      ],
+      "why": "Popular interview prompt",
+      "feederReels": [
+        "RI-10"
+      ],
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "VI-13",
+      "top8": false,
+      "title": "Rate Limiter Design + Spring Boot + Redis Implementation",
+      "pillar": "System Design",
+      "length": "20–25 min",
+      "chapters": [
+        "Why (Tatkal bots)",
+        "Algorithms",
+        "Headers 429/Retry-After",
+        "Redis Lua implementation",
+        "Distributed concerns",
+        "Testing"
+      ],
+      "why": "Combines interview + code; Tatkal tie-in",
+      "feederReels": [
+        "RI-21"
+      ],
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "VI-14",
+      "top8": false,
+      "title": "Redis Complete Tutorial in Hindi for Java Developers",
+      "pillar": "Database",
+      "length": "35–40 min",
+      "chapters": [
+        "Why Redis",
+        "Data structures",
+        "Caching patterns in Spring",
+        "Pub/sub & streams",
+        "Persistence",
+        "Pitfalls"
+      ],
+      "why": "Redis in most backend JDs",
+      "feederReels": [
+        "RI-49",
+        "RI-19"
+      ],
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "VI-15",
+      "top8": false,
+      "title": "Design Patterns in Java (Hindi) | 8 Patterns, Desi Examples",
+      "pillar": "Design Patterns",
+      "length": "40–50 min",
+      "chapters": [
+        "Why patterns",
+        "Singleton/Factory/Builder",
+        "Strategy/Observer",
+        "Proxy/Decorator",
+        "Patterns in Spring",
+        "Interview tips"
+      ],
+      "why": "Steady demand; desi examples differentiate",
+      "feederReels": [
+        "RI-57",
+        "RI-58",
+        "RI-59",
+        "RI-60",
+        "RI-61",
+        "RI-62",
+        "RI-63",
+        "RI-64"
+      ],
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "VI-16",
+      "top8": false,
+      "title": "LLD Interview: Parking Lot Design in Java (Hindi)",
+      "pillar": "Design Patterns",
+      "length": "25 min",
+      "chapters": [
+        "Requirements",
+        "Entities",
+        "Class diagram",
+        "Code",
+        "Extensibility",
+        "Interview follow-ups"
+      ],
+      "why": "Common LLD round",
+      "feederReels": [
+        "RI-63",
+        "RI-58"
+      ],
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "VI-17",
+      "top8": false,
+      "title": "JVM, Memory aur Garbage Collection in Hindi",
+      "pillar": "Backend",
+      "length": "18–22 min",
+      "chapters": [
+        "Stack vs Heap recap",
+        "Heap generations",
+        "GC algorithms (G1, ZGC)",
+        "Memory leaks",
+        "Tools (jstat, VisualVM)",
+        "Interview Qs"
+      ],
+      "why": "Builds on a winning reel",
+      "feederReels": [
+        "RI-34"
+      ],
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "VI-18",
+      "top8": false,
+      "title": "Java Concurrency + Virtual Threads (Java 21) in Hindi",
+      "pillar": "Backend",
+      "length": "20–25 min",
+      "chapters": [
+        "Threads basics",
+        "Synchronization",
+        "Executors/CompletableFuture",
+        "Virtual threads",
+        "Spring Boot usage",
+        "Pitfalls"
+      ],
+      "why": "Modern Java demand",
+      "feederReels": [
+        "RI-39",
+        "RI-46"
+      ],
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "VI-19",
+      "top8": false,
+      "title": "Spring Boot Project: Mini IRCTC Tatkal Booking Backend (Complete)",
+      "pillar": "Backend",
+      "length": "60–90 min",
+      "chapters": [
+        "Design",
+        "Entities/JPA",
+        "Booking with locking",
+        "Rate limit",
+        "Caching",
+        "Docker deploy"
+      ],
+      "why": "Project-based search + your Tatkal brand",
+      "feederReels": [
+        "RI-21",
+        "RI-52",
+        "RI-87"
+      ],
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "VI-20",
+      "top8": false,
+      "title": "Claude Code / AI Coding Workflow for Java Developers | Honest Review",
+      "pillar": "AI",
+      "length": "15–20 min",
+      "chapters": [
+        "Setup",
+        "Spec-first prompting",
+        "Generate feature + tests",
+        "What broke",
+        "Review checklist",
+        "When not to use"
+      ],
+      "why": "Claude Code ~39% work adoption; India 16.7% of vibe-coding usage",
+      "feederReels": [
+        "RI-70",
+        "RI-67",
+        "RI-76"
+      ],
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "VI-21",
+      "top8": false,
+      "title": "AI Security for Developers: Prompt Injection se Vibe Coding risks tak",
+      "pillar": "AI",
+      "length": "15–18 min",
+      "chapters": [
+        "Prompt injection recap",
+        "Indirect injection in agents",
+        "MCP tool permissions",
+        "Slopsquatting",
+        "Secrets leakage",
+        "Checklist"
+      ],
+      "why": "Builds on Prompt Injection engagement",
+      "feederReels": [
+        "RI-67",
+        "RI-69"
+      ],
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "VI-22",
+      "top8": false,
+      "title": "Resume + ATS Truth for Freshers | Live Resume Review (Hindi)",
+      "pillar": "Jobs",
+      "length": "15–20 min",
+      "chapters": [
+        "ATS myths vs reality",
+        "Parsing test",
+        "Rewriting projects with metrics",
+        "Keywords",
+        "AI-assisted edits done right",
+        "Before/after"
+      ],
+      "why": "High anxiety; data available",
+      "feederReels": [
+        "RI-77",
+        "RI-78",
+        "RI-84"
+      ],
+      "priority": "H",
+      "status": "idea"
+    },
+    {
+      "id": "VI-23",
+      "top8": false,
+      "title": "Product Startup Interview Experience Decoded (0–3 YOE Backend)",
+      "pillar": "Jobs",
+      "length": "15–18 min",
+      "chapters": [
+        "Round structure",
+        "DSA level",
+        "LLD round",
+        "Spring/SQL deep-dive",
+        "HLD-lite",
+        "Prep plan"
+      ],
+      "why": "Interview content beats job lists",
+      "feederReels": [
+        "RI-79",
+        "RI-80"
+      ],
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "VI-24",
+      "top8": false,
+      "title": "Internet Kaise Kaam Karta Hai | DNS, HTTP, HTTPS, Client-Server",
+      "pillar": "DevOps & Security",
+      "length": "20–25 min",
+      "chapters": [
+        "Client-server recap",
+        "DNS",
+        "TCP/TLS",
+        "HTTP methods/headers/status codes",
+        "CDN",
+        "Debug with curl"
+      ],
+      "why": "Feeds from Server Down + API redo",
+      "feederReels": [
+        "RI-86",
+        "RI-90",
+        "RI-45",
+        "RI-35"
+      ],
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "VI-25",
+      "top8": false,
+      "title": "Kafka in Hindi with Swiggy Example",
+      "pillar": "System Design",
+      "length": "20 min",
+      "chapters": [
+        "Why queues",
+        "Topics/partitions",
+        "Consumer groups",
+        "Ordering + idempotency",
+        "Spring Kafka code",
+        "DLQ/retries"
+      ],
+      "why": "Indian product-company interview staple",
+      "feederReels": [
+        "RI-22",
+        "RI-23"
+      ],
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "VI-26",
+      "top8": false,
+      "title": "Docker + Kubernetes Basics for Backend Developers (Hindi)",
+      "pillar": "DevOps & Security",
+      "length": "30–40 min",
+      "chapters": [
+        "Containers vs VMs",
+        "Dockerfile for Spring Boot",
+        "Compose",
+        "K8s pods/deployments",
+        "HPA scaling",
+        "Deploy demo"
+      ],
+      "why": "Every JD; ties to Hotstar",
+      "feederReels": [
+        "RI-87",
+        "RI-92"
+      ],
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "VI-27",
+      "top8": false,
+      "title": "UPI Fraud Kaise Hota Hai — Tech Samjho, Family Bachao",
+      "pillar": "DevOps & Security",
+      "length": "12–15 min",
+      "chapters": [
+        "How UPI auth works",
+        "Screen-share scams",
+        "Collect-request scams",
+        "Fake apps",
+        "What banks/NPCI do",
+        "Checklist"
+      ],
+      "why": "Non-tech reach; extends UPI series",
+      "feederReels": [
+        "RI-89",
+        "RI-02"
+      ],
+      "priority": "M",
+      "status": "idea"
+    },
+    {
+      "id": "VI-28",
+      "top8": false,
+      "title": "Git & GitHub Complete for Freshers (Hindi)",
+      "pillar": "DevOps & Security",
+      "length": "30 min",
+      "chapters": [
+        "Basics",
+        "Branching",
+        "Merge vs rebase",
+        "PRs",
+        "Conflicts",
+        "Portfolio tips"
+      ],
+      "why": "Saturated; only as a utility",
+      "feederReels": [
+        "RI-88"
+      ],
+      "priority": "L",
+      "status": "idea"
+    }
+  ],
+  "plan": {
+    "note": "8-week plan (research, Oct 2026). Order follow karo; agar templates setup late khatam ho toh dates aage shift karo, order same rakho. 8 hafte ke baad saves/shares/completion se re-rank.",
+    "cadence": "4 reels/week + 1 long video every 2 weeks",
+    "weeks": [
+      {
+        "week": 1,
+        "dates": "2–8 Nov 2026",
+        "reels": [
+          "RI-01",
+          "RI-32",
+          "RI-65",
+          "RI-77"
+        ],
+        "video": null,
+        "note": ""
+      },
+      {
+        "week": 2,
+        "dates": "9–15 Nov 2026",
+        "reels": [
+          "RI-02",
+          "RI-47",
+          "RI-19",
+          "RI-66"
+        ],
+        "video": "VI-01",
+        "note": ""
+      },
+      {
+        "week": 3,
+        "dates": "16–22 Nov 2026",
+        "reels": [
+          "RI-33",
+          "RI-23",
+          "RI-78",
+          "RI-67"
+        ],
+        "video": null,
+        "note": ""
+      },
+      {
+        "week": 4,
+        "dates": "23–29 Nov 2026",
+        "reels": [
+          "RI-04",
+          "RI-48",
+          "RI-57",
+          "RI-21"
+        ],
+        "video": "VI-03",
+        "note": ""
+      },
+      {
+        "week": 5,
+        "dates": "30 Nov–6 Dec 2026",
+        "reels": [
+          "RI-79",
+          "RI-34",
+          "RI-20",
+          "RI-68"
+        ],
+        "video": null,
+        "note": "Campus placement Phase 1 (IITs historically 1 Dec)"
+      },
+      {
+        "week": 6,
+        "dates": "7–13 Dec 2026",
+        "reels": [
+          "RI-05",
+          "RI-58",
+          "RI-22",
+          "RI-70"
+        ],
+        "video": "VI-05",
+        "note": ""
+      },
+      {
+        "week": 7,
+        "dates": "14–20 Dec 2026",
+        "reels": [
+          "RI-03",
+          "RI-49",
+          "RI-80",
+          "RI-71"
+        ],
+        "video": null,
+        "note": "IPL 2027 mini-auction week (reported, unconfirmed)"
+      },
+      {
+        "week": 8,
+        "dates": "21–27 Dec 2026",
+        "reels": [
+          "RI-06",
+          "RI-36",
+          "RI-81",
+          "RI-69"
+        ],
+        "video": "VI-08",
+        "note": "New Year roadmap search peak"
+      }
+    ]
+  },
+  "calendar": [
+    {
+      "when": "1st of every month (from 1 Nov 2026)",
+      "event": "NPCI monthly UPI data release",
+      "status": "pattern",
+      "publish": "Same-day 'UPI ne record toda — 2 sec mein kaise?' reel (#1) ya update; UPI long video push"
+    },
+    {
+      "when": "Early Nov 2026 (Diwali 8 Nov)",
+      "event": "Festive payments + shopping peak",
+      "status": "pattern",
+      "publish": "UPI pending/refund (#2), UPI fraud awareness (#89)"
+    },
+    {
+      "when": "Nov 2026",
+      "event": "IPL 2027 player retention deadline",
+      "status": "reported",
+      "publish": "Teaser: 'IPL streaming ka backend' poll / story"
+    },
+    {
+      "when": "Nov–Dec 2026",
+      "event": "Campus placement season (IIT Phase 1 historically 1 Dec) + off-campus",
+      "status": "pattern",
+      "publish": "Interview Qs (#79), HashMap/@Transactional/ACID reels, Spring Boot Interview long video (VI-05), resume/ATS (#77, #78)"
+    },
+    {
+      "when": "By 31 Dec 2026",
+      "event": "UPI 30% app market-share cap deadline",
+      "status": "single-source — verify with NPCI",
+      "publish": "Explainer only if confirmed"
+    },
+    {
+      "when": "~Mid-Dec 2026 (reported 14–16 Dec)",
+      "event": "IPL 2027 mini-auction",
+      "status": "reported, not BCCI-confirmed",
+      "publish": "Hotstar scaling reel (#3); start promoting Hotstar long video"
+    },
+    {
+      "when": "Late Dec 2026 – mid Jan 2027",
+      "event": "'Roadmap 2027' search peak",
+      "status": "pattern",
+      "publish": "Java Backend Roadmap 2027 (#81 + VI-08), 'AI ne 2026 mein dev ka kaam kaise badla' recap"
+    },
+    {
+      "when": "Early–mid Jan 2027",
+      "event": "Naukri JobSpeak (Dec data); IT Q3 results with headcount (TCS ~2nd week Jan)",
+      "status": "pattern",
+      "publish": "Data explainer (#82); layoff fear framing avoid"
+    },
+    {
+      "when": "Mid/late Jan 2027",
+      "event": "Republic Day sales (Flipkart/Amazon)",
+      "status": "pattern",
+      "publish": "Flipkart flash sale reel (#5) + long video (VI-04), optimistic locking (#52)"
+    },
+    {
+      "when": "Jan–Apr 2027",
+      "event": "Off-campus internship + fresher drive season",
+      "status": "pattern",
+      "publish": "Referral message (#83), STAR answers (#84), fake job red flags (#85)"
+    },
+    {
+      "when": "1 Feb 2027 (expected)",
+      "event": "Union Budget 2027-28",
+      "status": "expected",
+      "publish": "Sirf agar tech/AI/skilling announcement ho: same-evening 60 sec explainer. Pehle se speculate mat karo"
+    },
+    {
+      "when": "Feb 2027",
+      "event": "JEE Main session-1 results (high-traffic sites)",
+      "status": "pattern",
+      "publish": "'Result website crash kyun hoti hai?' (load balancer + caching + CDN)"
+    },
+    {
+      "when": "Late Feb – early Mar 2027",
+      "event": "Pre-IPL build-up",
+      "status": "pattern",
+      "publish": "Hotstar IPL long video (VI-02), CDN (#25), Kubernetes (#92)"
+    },
+    {
+      "when": "~10 or 14 Mar – mid/late May 2027",
+      "event": "IPL 2027 (sources conflict; confirm when fixtures out Jan–Feb)",
+      "status": "tentative",
+      "publish": "Weekly cricket reels: live-score push notifications, fantasy-app traffic spikes (generic design), streaming latency"
+    },
+    {
+      "when": "April 2027",
+      "event": "New FY, appraisals, campus hires joining; JEE Main session 2",
+      "status": "pattern",
+      "publish": "'Pehli job ke pehle 30 din: backend dev checklist', Git/Docker for joiners, Spring Boot project long video (VI-19)"
+    }
+  ],
+  "backlog": [
+    {
+      "title": "Webhook / Callback",
+      "pillar": "System Design",
+      "series": "System Design simple",
+      "description": "'Doodh aa jaaye toh ghanti bajana', payment callback",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Retry + Exponential Backoff",
+      "pillar": "System Design",
+      "series": "System Design simple",
+      "description": "Dost phone nahi utha raha: 1, 5, 15 min",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Heartbeat / Health Check",
+      "pillar": "System Design",
+      "series": "System Design simple",
+      "description": "Maa ka 'Khaana khaya?' call",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Replication",
+      "pillar": "Database",
+      "series": "DB Ke Andar",
+      "description": "Chaabi ki 3 copies",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Single Point of Failure",
+      "pillar": "System Design",
+      "series": "System Design simple",
+      "description": "Ek hi chaabi",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Circuit Breaker",
+      "pillar": "System Design",
+      "series": "Design Pattern Desi Style",
+      "description": "Ghar ka MCB",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Status Code Ki Kahani (series)",
+      "pillar": "System Design",
+      "series": "Status Code Ki Kahani",
+      "description": "200/201/204/301/304/400/401/403/404/409/422/429/500/502/503/504 — har ek desi story",
+      "priority": "high",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "System design round opener",
+      "pillar": "Jobs",
+      "series": "Interview Mein Poochha Gaya",
+      "description": "Requirements pehle, diagram baad mein",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Adapter Pattern",
+      "pillar": "Design Patterns",
+      "series": "Design Pattern Desi Style",
+      "description": "Travel adapter / charger",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Decorator Pattern",
+      "pillar": "Design Patterns",
+      "series": "Design Pattern Desi Style",
+      "description": "Pizza toppings: bina class badle feature add",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Facade Pattern",
+      "pillar": "Design Patterns",
+      "series": "Design Pattern Desi Style",
+      "description": "Travel agent: ek call, peeche flight+hotel+cab",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Prototype Pattern",
+      "pillar": "Design Patterns",
+      "series": "Design Pattern Desi Style",
+      "description": "Xerox: copy se naya object",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Dependency Injection",
+      "pillar": "Backend",
+      "series": "Java Backend 60 Seconds",
+      "description": "Spring IoC: khud object mat banao, mangwao",
+      "priority": "high",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Spring Boot request lifecycle",
+      "pillar": "Backend",
+      "series": "Java Backend 60 Seconds",
+      "description": "DispatcherServlet → Controller → Service → Repo",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Exception handling best practices",
+      "pillar": "Backend",
+      "series": "Fresher Se Senior",
+      "description": "Catch karke chupana vs handle karna",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Joins explained",
+      "pillar": "Database",
+      "series": "DB Ke Andar",
+      "description": "INNER/LEFT/RIGHT shaadi guest list se",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Prompt engineering 5 rules",
+      "pillar": "AI",
+      "series": "AI Se Kaam Nikalwao",
+      "description": "Role, context, example, format, constraints",
+      "priority": "high",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "AI se resume banao (ATS friendly)",
+      "pillar": "AI",
+      "series": "AI Se Kaam Nikalwao",
+      "description": "Concrete prompt + result",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "AI se SQL query likhwao",
+      "pillar": "AI",
+      "series": "AI Se Kaam Nikalwao",
+      "description": "Schema do, query lo, verify karo",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "LinkedIn profile jo recruiter dekhe",
+      "pillar": "Jobs",
+      "series": "Job Market Reality",
+      "description": "Headline, about, keywords",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Fresher project ideas jo resume pe chamkein",
+      "pillar": "Jobs",
+      "series": "Fresher Se Senior",
+      "description": "Real problem solve karne wale",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Git commands jo daily kaam aate hain",
+      "pillar": "Jobs",
+      "series": "Fresher Se Senior",
+      "description": "Tips: rebase, stash, cherry-pick",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    },
+    {
+      "title": "Code review mein kya dekhte hain",
+      "pillar": "Jobs",
+      "series": "Fresher Se Senior",
+      "description": "Senior ki checklist",
+      "priority": "normal",
+      "source": "pre-research (Claude list) — demand verified nahi"
+    }
+  ]
+}
