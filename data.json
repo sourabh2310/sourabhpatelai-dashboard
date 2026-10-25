@@ -2,7 +2,7 @@
   "meta": {
     "channel": "Sourabh Patel AI",
     "handle": "@sourabhpatelai",
-    "updated": "2026-10-24",
+    "updated": "2026-10-25",
     "nextReel": "R09",
     "nextShort": "S07",
     "nextVideo": "YT02",
@@ -16,16 +16,16 @@
       "AI": 20,
       "Jobs": 15
     },
-    "setupComplete": false,
+    "setupComplete": true,
     "setupProgress": {
       "base": "done 2026-10-24 — Midnight Drift background, Claude Editorial fonts (Newsreader + italic pillar terms, Instrument Sans, JetBrains Mono), E5 Glass Pill captions (y=1290), pillar colours (+ light shades), 'Glass' components, 'Kinetic' motion, 'Soft UI' sound kit (pipeline/sfx), watermark 'Photo + handle' centred above captions, no header",
       "reel-base": "approved 2026-10-24 (16 components incl. CodePanel added in Step 3; Kinetic motion, Soft UI SFX, lucide icons, timeline cueOf)",
       "reel-layouts": "approved 2026-10-24: reel-system-design (RI-01), reel-ai (RI-65), reel-backend (RI-32 + DB still), reel-design-patterns (RI-58), reel-jobs-tips (RI-77 + chart still); demos in _preview/14-layouts",
       "pipeline": "approved 2026-10-24 (R08 final): prepare/transcribe(GPU)/edit/align/level/render.mjs/finish/qc_motion in shared/templates/pipeline",
-      "cover": "direction chosen 2026-10-24: existing channel grid style (R08 cover.png, docs/06 \"Chosen direction\"); template folder shared/templates/cover/ still to build in Step 5",
-      "video": "pending",
-      "thumbnail": "pending",
-      "shorts-ending": "pending"
+      "cover": "approved 2026-10-24: channel grid style, shared/templates/cover/ (classic layout, src/reels.ts → render-reels.mjs, README); grid preview _preview/15-covers/_grid-reels.png",
+      "video": "final 2026-10-25: shared/templates/video/ — chrome A (top chapter bar + face panel), modes Whiteboard/Face+Diagram/Code/Chapter card/Meme beat/Quiz/End screen, KeyTerm pop-ups (no burned captions); previews _preview/16-video",
+      "thumbnail": "final 2026-10-25: shared/templates/thumbnail/ — direction 'problem' (Anton white + yellow stroke text, problem-state hero, face panel), variants A/B/C, src/videos.ts → render-videos.mjs; previews _preview/17-thumbnail",
+      "shorts-ending": "final 2026-10-25: reel-base ShortsEnd style 'card' (glass card + mini 16:9 thumb + 'Full video neeche linked hai' + arrow); previews _preview/18-shorts-ending"
     },
     "pillarGroups": {
       "Backend": [
@@ -200,10 +200,24 @@
       "description": "Travel app ek screen pe saari airlines kaise dikhata hai — endpoint, methods, idempotency, 401/429, JSON",
       "length": "2:52",
       "folder": "reels/R08-API-Kya-Hai",
-      "status": "rendered",
+      "status": "published",
       "idea": "RI-45",
       "short": "S06",
-      "cover": "cover.png (channel grid style, light)"
+      "cover": "cover.png (channel grid style, light)",
+      "published": "2026-10-24",
+      "stats": {
+        "views": 121,
+        "viewers": 112,
+        "avgWatchSec": 5,
+        "skipRate": 0.77,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "follows": 0,
+        "note": "~1.5 h after posting"
+      },
+      "lesson": "2:52 concept reel + slow setup hook (topic word at 16 s) + weak frame 0 → 77% skip, 5 s avg watch. Gates added: check_voice.py (length/topic/question) + frame-0 15% check."
     }
   ],
   "shorts": [
