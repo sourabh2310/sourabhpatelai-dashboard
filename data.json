@@ -3,7 +3,7 @@
     "channel": "Sourabh Patel AI",
     "handle": "@sourabhpatelai",
     "updated": "2026-10-25",
-    "nextReel": "R09",
+    "nextReel": "R10",
     "nextShort": "S07",
     "nextVideo": "YT02",
     "followers": {
@@ -218,6 +218,34 @@
         "note": "~1.5 h after posting"
       },
       "lesson": "2:52 concept reel + slow setup hook (topic word at 16 s) + weak frame 0 → 77% skip, 5 s avg watch. Gates added: check_voice.py (length/topic/question) + frame-0 15% check."
+    },
+    {
+      "id": "R09",
+      "title": "HashMap ke andar kya hota hai? (Interview ka favourite)",
+      "pillar": "Backend",
+      "type": "concept",
+      "format": "Interview Q",
+      "theme": "dark",
+      "concepts": [
+        "hashCode()",
+        "Hash spreading h ^ (h >>> 16)",
+        "(n-1) & hash index",
+        "Buckets (Node[] table)",
+        "Collision",
+        "Linked list chaining",
+        "equals() lookup",
+        "Treeify (>8 nodes, table >= 64)",
+        "Red-black tree O(log n)",
+        "Load factor 0.75",
+        "Resize at 12 (double to 32)",
+        "equals/hashCode contract"
+      ],
+      "description": "Java HashMap internals: hostel ke 16 kamre = buckets; hashCode → (n-1)&hash, collision → list → red-black tree, load factor 0.75 resize, equals/hashCode trap",
+      "length": "~59 s (170 words, script)",
+      "folder": "reels/R09-HashMap-Internals",
+      "status": "script",
+      "idea": "RI-32",
+      "cover": "cover.png (channel grid style, dark, tag INTERVIEW)"
     }
   ],
   "shorts": [
@@ -316,16 +344,20 @@
     "save": [
       "Is reel ko save kar lo 📌, kyunki interview mein sabse pehla sawaal yahi hota hai.",
       "Save kar lo 📌, agli baar koi meeting mein 'API' bole toh tum blank nahi dikhoge.",
-      "(R08 repeat of the API meeting save line — voiceover se aaya, next reel mein naya likhna)"
+      "(R08 repeat of the API meeting save line — voiceover se aaya, next reel mein naya likhna)",
+      "Save kar lo, Java round mein kaam aayega. (R09)"
     ],
     "send": [
-      "Us dost ko share kar do jo roz flight ka price check karta hai par kabhi book nahi karta. (R08)"
+      "Us dost ko share kar do jo roz flight ka price check karta hai par kabhi book nahi karta. (R08)",
+      "Us dost ko bhejo jo roz HashMap likhta hai, andar kabhi nahi jhaanka. (R09)"
     ],
     "quiz": [
-      "Booking mein sirf seat number badalna hai, toh kaunsa method? PUT ya PATCH. (R08)"
+      "Booking mein sirf seat number badalna hai, toh kaunsa method? PUT ya PATCH. (R08)",
+      "Capacity 64 pe kitni entries ke baad resize, aur kyun? (R09)"
     ],
     "follow": [
-      "Aise hi concepts simple way mein samajhne ke liye follow kar lo. Ye POST request hai, ek hi baar dabana. (R08)"
+      "Aise hi concepts simple way mein samajhne ke liye follow kar lo. Ye POST request hai, ek hi baar dabana. (R08)",
+      "Follow karo, interview answer O 1 mein aayega. (R09)"
     ]
   },
   "reelIdeas": [
@@ -807,7 +839,8 @@
       "difficulty": "M",
       "sources": "✅",
       "priority": "H",
-      "status": "idea"
+      "status": "done",
+      "madeAs": "R09"
     },
     {
       "id": "RI-33",
