@@ -164,7 +164,7 @@
       "short": "S04",
       "video": "YT01",
       "stats": {
-        "views": 2011
+        "views": 2012
       },
       "link": "https://www.instagram.com/reel/DezJvoBPasC/",
       "statsUpdated": "2026-10-29"
@@ -187,7 +187,7 @@
       "status": "published",
       "short": "S05",
       "stats": {
-        "views": 174
+        "views": 176
       },
       "link": "https://www.instagram.com/reel/De11-uXvJ2E/",
       "statsUpdated": "2026-10-29"
@@ -254,6 +254,65 @@
       "status": "script",
       "idea": "RI-32",
       "cover": "cover.png (channel grid style, dark, tag INTERVIEW)"
+    },
+    {
+      "id": "R11",
+      "title": "AI ki History: 1966 ka chatbot vs ChatGPT",
+      "pillar": "AI",
+      "type": "story",
+      "format": "History walkthrough + live test",
+      "theme": "dark",
+      "concepts": [
+        "ELIZA (1966, keyword + ready rules)",
+        "Turing 1950",
+        "Dartmouth 1956 naam AI",
+        "AI Winter",
+        "Neural network, weights",
+        "Backpropagation",
+        "2012 data + GPUs (AlexNet)",
+        "RNN word-by-word memory",
+        "Transformer + attention (2017)",
+        "GPT next-word prediction",
+        "ChatGPT launch (5 din, 10 lakh)"
+      ],
+      "description": "1966 ELIZA ko log secrets batate the par woh kuch samajhta nahi tha → same line ELIZA vs ChatGPT live test → Turing se ChatGPT tak AI ka safar",
+      "length": "2:56.6 (user approved 3 min)",
+      "folder": "reels/R11-AI-Ki-History",
+      "status": "published",
+      "cover": "cover.png (white, image cover: 3D ELIZA CRT vs ChatGPT phone, project/src/reel/CoverSamples.tsx CoverA)",
+      "short": "S08",
+      "publishedOn": "2026-10-29",
+      "link": "https://www.instagram.com/reel/DfE9EDKs98o/",
+      "stats": {
+        "views": 109
+      },
+      "statsUpdated": "2026-10-29"
+    },
+    {
+      "id": "R13",
+      "title": "API kya hai? (re-edit of archived R08, same voiceover)",
+      "pillar": "System Design",
+      "type": "concept",
+      "theme": "dark",
+      "concepts": [
+        "API as contract",
+        "REST API call",
+        "Endpoint",
+        "GET vs POST, 201 Created",
+        "Idempotency",
+        "API key header",
+        "401 Unauthorized",
+        "429 Too Many Requests",
+        "Parallel API calls"
+      ],
+      "description": "Old R08 voiceover re-cut: hook reordered (question + API in 2 s), 11 segments, tempo 1.15 → 71 s; new 3D visuals (three.js globe/server/key/lock) + cube/flip transitions",
+      "length": "1:11",
+      "folder": "reels/R13-API-Kya-Hai",
+      "status": "rendered",
+      "idea": "RI-45",
+      "redoOf": "R08 (archived)",
+      "cover": "cover.png (channel grid style, dark)",
+      "short": null
     }
   ],
   "shorts": [
@@ -325,6 +384,15 @@
         "views": 331
       },
       "statsUpdated": "2026-10-29"
+    },
+    {
+      "id": "S08",
+      "title": "AI History in Hindi: 1966 ELIZA vs ChatGPT (Same Line Test)",
+      "folder": "shorts/S08-AI-Ki-History",
+      "status": "ready",
+      "relatedVideo": "S02",
+      "reel": "R11",
+      "note": "Same clean render as R11 (2:56.9). Related video → AI history YT video once live."
     }
   ],
   "videos": [
@@ -415,17 +483,21 @@
       "Save kar lo 📌, agli baar koi meeting mein 'API' bole toh tum blank nahi dikhoge.",
       "(R08 repeat of the API meeting save line — voiceover se aaya, next reel mein naya likhna)",
       "Save kar lo, Java round mein kaam aayega. (R09)",
-      "Save kar lo, interview mein yahi explain karna. (R08)"
+      "Save kar lo, interview mein yahi explain karna. (R08)",
+      "R11: To is reel ko save kar lo (AI ki poori kahani)",
+      "R11 caption: Interview mein \"AI ka evolution 1 minute mein batao\" aaye, toh yahi 3 points kaafi hain"
     ],
     "send": [
       "Us dost ko share kar do jo roz flight ka price check karta hai par kabhi book nahi karta. (R08)",
       "Us dost ko bhejo jo roz HashMap likhta hai, andar kabhi nahi jhaanka. (R09)",
-      "Us dost ko bhejo jo sochta hai UPI matlab bas QR scan. (R08)"
+      "Us dost ko bhejo jo sochta hai UPI matlab bas QR scan. (R08)",
+      "R11: Ye video apne us dost ko zaroor bhejna, jiska agle kuch dinon mein interview hai"
     ],
     "quiz": [
       "Booking mein sirf seat number badalna hai, toh kaunsa method? PUT ya PATCH. (R08)",
       "Capacity 64 pe kitni entries ke baad resize, aur kyun? (R09)",
-      "Pending pe dobara pay galat kyun? (R08, answer: idempotency)"
+      "Pending pe dobara pay galat kyun? (R08, answer: idempotency)",
+      "R11: ChatGPT sach mein samajhta hai ya ELIZA ka bada version? Reason ke saath comment"
     ],
     "follow": [
       "Aise hi concepts simple way mein samajhne ke liye follow kar lo. Ye POST request hai, ek hi baar dabana. (R08)",
@@ -446,8 +518,7 @@
       "difficulty": "M",
       "sources": "✅ NPCI docs + monthly data",
       "priority": "H",
-      "status": "done",
-      "madeAs": "R08"
+      "status": "idea"
     },
     {
       "id": "RI-02",
@@ -748,7 +819,9 @@
       "difficulty": "M",
       "sources": "✅",
       "priority": "H",
-      "status": "idea"
+      "status": "done",
+      "madeAs": "R06",
+      "note": "Covered in R06 (rate limiter, bots) + YT01 long video — 2026-10-29 user confirmed, do not repeat."
     },
     {
       "id": "RI-22",
@@ -913,8 +986,7 @@
       "difficulty": "M",
       "sources": "✅",
       "priority": "H",
-      "status": "done",
-      "madeAs": "R09"
+      "status": "idea"
     },
     {
       "id": "RI-33",
@@ -1896,6 +1968,67 @@
       "priority": "M",
       "status": "idea",
       "source": "added 2026-10-28: follow-up of R08 (UPI system design)"
+    },
+    {
+      "id": "RI-98",
+      "title": "Transformer attention ek line mein: darr ↔ interview",
+      "pillar": "AI",
+      "series": "AI Ka Andar Ka Scene",
+      "format": "Concept",
+      "hook": "Transformer attention ek line mein: darr ↔ interview",
+      "keyPoints": [
+        "Self-attention Q/K/V",
+        "scores",
+        "softmax — ek sentence pe"
+      ],
+      "why": "R11 (AI history) ka follow-up deep dive",
+      "difficulty": "M",
+      "sources": [],
+      "priority": "M",
+      "status": "idea",
+      "source": "added 2026-10-29: R11 follow-up",
+      "topPick": false
+    },
+    {
+      "id": "RI-99",
+      "title": "Next word prediction: ChatGPT jawab kaise likhta hai",
+      "pillar": "AI",
+      "series": "AI Ka Andar Ka Scene",
+      "format": "Concept",
+      "hook": "Next word prediction: ChatGPT jawab kaise likhta hai",
+      "keyPoints": [
+        "Tokens",
+        "probability",
+        "temperature",
+        "sampling"
+      ],
+      "why": "R11 (AI history) ka follow-up deep dive",
+      "difficulty": "M",
+      "sources": [],
+      "priority": "M",
+      "status": "idea",
+      "source": "added 2026-10-29: R11 follow-up",
+      "topPick": false
+    },
+    {
+      "id": "RI-100",
+      "title": "Backpropagation 60 second mein",
+      "pillar": "AI",
+      "series": "AI Ka Andar Ka Scene",
+      "format": "Concept",
+      "hook": "Backpropagation 60 second mein",
+      "keyPoints": [
+        "Loss",
+        "gradient",
+        "weight update ek neuron pe"
+      ],
+      "why": "R11 (AI history) ka follow-up deep dive",
+      "difficulty": "M",
+      "sources": [],
+      "priority": "M",
+      "status": "idea",
+      "source": "added 2026-10-29: R11 follow-up",
+      "topPick": false
     }
   ],
   "videoIdeas": [
@@ -2214,8 +2347,9 @@
       "feederReels": [
         "RI-21"
       ],
-      "priority": "H",
-      "status": "idea"
+      "priority": "L",
+      "status": "idea",
+      "note": "Tatkal/rate-limiter angle already in YT01; only do as pure Spring Boot + Redis code video if ever."
     },
     {
       "id": "VI-14",
