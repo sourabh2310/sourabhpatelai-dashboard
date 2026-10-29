@@ -2,13 +2,13 @@
   "meta": {
     "channel": "Sourabh Patel AI",
     "handle": "@sourabhpatelai",
-    "updated": "2026-10-25",
+    "updated": "2026-10-29",
     "nextReel": "R10",
     "nextShort": "S07",
     "nextVideo": "YT02",
     "followers": {
-      "instagram": 44,
-      "youtube": 3
+      "instagram": 46,
+      "youtube": 9
     },
     "pillarMix": {
       "System Design": 35,
@@ -56,8 +56,10 @@
       "status": "published",
       "short": null,
       "stats": {
-        "views": 159
-      }
+        "views": 165
+      },
+      "link": "https://www.instagram.com/reel/DejVOFkvxph/",
+      "statsUpdated": "2026-10-29"
     },
     {
       "id": "R02",
@@ -74,8 +76,10 @@
       "status": "published",
       "short": "S01",
       "stats": {
-        "views": 1630
-      }
+        "views": 1639
+      },
+      "link": "https://www.instagram.com/reel/DeonTXoPhB8/",
+      "statsUpdated": "2026-10-29"
     },
     {
       "id": "R03",
@@ -92,8 +96,11 @@
       "short": "S02",
       "stats": {
         "likes": 28,
-        "comments": 2
-      }
+        "comments": 2,
+        "views": 1625
+      },
+      "link": "https://www.instagram.com/reel/DerZ2DEv_5M/",
+      "statsUpdated": "2026-10-29"
     },
     {
       "id": "R04",
@@ -110,8 +117,10 @@
       "status": "published",
       "short": null,
       "stats": {
-        "views": 185
-      }
+        "views": 195
+      },
+      "link": "https://www.instagram.com/reel/Devn6cVvQgQ/",
+      "statsUpdated": "2026-10-29"
     },
     {
       "id": "R05",
@@ -129,8 +138,10 @@
       "status": "published",
       "short": "S03",
       "stats": {
-        "views": 1542
-      }
+        "views": 1553
+      },
+      "link": "https://www.instagram.com/reel/Dewl4f8Pw7B/",
+      "statsUpdated": "2026-10-29"
     },
     {
       "id": "R06",
@@ -153,8 +164,10 @@
       "short": "S04",
       "video": "YT01",
       "stats": {
-        "views": 1972
-      }
+        "views": 2011
+      },
+      "link": "https://www.instagram.com/reel/DezJvoBPasC/",
+      "statsUpdated": "2026-10-29"
     },
     {
       "id": "R07",
@@ -174,50 +187,45 @@
       "status": "published",
       "short": "S05",
       "stats": {
-        "views": 154
-      }
+        "views": 174
+      },
+      "link": "https://www.instagram.com/reel/De11-uXvJ2E/",
+      "statsUpdated": "2026-10-29"
     },
     {
       "id": "R08",
-      "title": "API kya hai? (travel app se samjho)",
+      "title": "UPI zero se design karo: system design, 4 problems",
       "pillar": "System Design",
-      "type": "concept",
+      "type": "case",
+      "format": "Case study / design walkthrough",
       "theme": "light",
       "concepts": [
-        "API as contract",
-        "REST",
-        "Endpoint",
-        "Query parameters",
-        "HTTP methods GET/POST/PUT/PATCH/DELETE",
-        "201 Created",
-        "Idempotency",
-        "API key header",
-        "401 Unauthorized",
-        "429 Too Many Requests",
-        "JSON",
-        "Parallel API calls"
+        "Hub vs mesh (100 banks: ~4,950 vs 100 links)",
+        "NPCI UPI switch routes messages, holds no funds",
+        "PIN encrypted on device, only issuer bank decrypts",
+        "Transaction ID",
+        "Debit then credit",
+        "Clearing (instant account entries) vs net settlement between banks",
+        "Lost response → PENDING (unknown, not failure)",
+        "Re-pay = new ID = double-debit risk",
+        "Same Transaction ID → bank dedupes = idempotency",
+        "Credit fail → auto reversal"
       ],
-      "description": "Travel app ek screen pe saari airlines kaise dikhata hai — endpoint, methods, idempotency, 401/429, JSON",
-      "length": "2:52",
-      "folder": "reels/R08-API-Kya-Hai",
-      "status": "published",
-      "idea": "RI-45",
-      "short": "S06",
+      "description": "Hook: UPI tumhe zero se banana hai, ₹10 chai 2 sec mein. 4 problems → design: mesh vs NPCI hub, encrypted PIN, clearing vs net settlement (Splitwise), timeout/pending/idempotency.",
+      "length": "2:40 (as recorded, user approved no 100 s cap)",
+      "folder": "reels/R08-UPI-System-Design",
+      "status": "rendered",
+      "idea": "RI-01",
       "cover": "cover.png (channel grid style, light)",
-      "published": "2026-10-24",
-      "stats": {
-        "views": 121,
-        "viewers": 112,
-        "avgWatchSec": 5,
-        "skipRate": 0.77,
-        "likes": 1,
-        "comments": 0,
-        "shares": 0,
-        "saves": 0,
-        "follows": 0,
-        "note": "~1.5 h after posting"
-      },
-      "lesson": "2:52 concept reel + slow setup hook (topic word at 16 s) + weak frame 0 → 77% skip, 5 s avg watch. Gates added: check_voice.py (length/topic/question) + frame-0 15% check."
+      "render": {
+        "master": "final/Reel.mp4",
+        "phone": "final/Reel_phone.mp4",
+        "date": "2026-10-28",
+        "layout": "split: content top (no box) + caption + boxed presenter (4K, AI matte, studio bg Canva, relit + clean-portrait filter)",
+        "qc": "qc_motion PASS (longest static 0.50 s, events 85%), -13.94 LUFS, transcript repeat scan clean",
+        "version": "v2 (2026-10-28): 12 repeated takes removed (work/apply_drops.py), visuals re-synced",
+        "length": "2:21 (4232 frames)"
+      }
     },
     {
       "id": "R09",
@@ -255,8 +263,10 @@
       "title": "SQL Query Production Mein Slow Kyun? 🤯 | Database Indexing #Shorts",
       "status": "published",
       "stats": {
-        "views": 46
-      }
+        "views": 49
+      },
+      "link": "https://youtube.com/shorts/jJdD6oVapdw",
+      "statsUpdated": "2026-10-29"
     },
     {
       "id": "S02",
@@ -264,8 +274,10 @@
       "title": "Can a PDF Trick ChatGPT? 😳 | Prompt Injection Explained in Hindi #Shorts",
       "status": "published",
       "stats": {
-        "views": 27
-      }
+        "views": 34
+      },
+      "link": "https://youtube.com/shorts/kNk5S2nK4Hs",
+      "statsUpdated": "2026-10-29"
     },
     {
       "id": "S03",
@@ -273,8 +285,10 @@
       "title": "Java Stack vs Heap Memory – 2 Minute mein Clear! #Shorts",
       "status": "published",
       "stats": {
-        "views": 44
-      }
+        "views": 49
+      },
+      "link": "https://youtube.com/shorts/mBAahpvmyis",
+      "statsUpdated": "2026-10-29"
     },
     {
       "id": "S04",
@@ -282,8 +296,10 @@
       "title": "Tatkal ticket milna namumkin kyun hai? 😰🚂 #shorts #indianrailways #irctc",
       "status": "published",
       "stats": {
-        "views": 401
-      }
+        "views": 518
+      },
+      "link": "https://youtube.com/shorts/0bYmz_Jq4Z4",
+      "statsUpdated": "2026-10-29"
     },
     {
       "id": "S05",
@@ -291,16 +307,24 @@
       "title": "Server Down Kyun Hota Hai? Request, Packets, 404 vs 503 Simple Hindi Mein",
       "status": "published",
       "stats": {
-        "views": 82
-      }
+        "views": 112
+      },
+      "link": "https://youtube.com/shorts/ll4-aVA_5qQ",
+      "statsUpdated": "2026-10-29"
     },
     {
       "id": "S06",
-      "title": "API kya hai? REST API Hindi mein | GET, POST, PUT, PATCH",
+      "title": "What is API ? REST API | GET, POST, PUT, PATCH, DELETE",
       "folder": "shorts/S06-API-Kya-Hai",
-      "status": "ready",
+      "status": "published",
       "relatedVideo": "S05",
-      "reel": "R08"
+      "reel": "R08",
+      "note": "Live on YouTube (found 2026-10-29). Linked reel R08 (old API) archived on Instagram 2026-10-28.",
+      "link": "https://youtube.com/shorts/86TEzRx8sfA",
+      "stats": {
+        "views": 331
+      },
+      "statsUpdated": "2026-10-29"
     }
   ],
   "videos": [
@@ -316,11 +340,56 @@
       "status": "published",
       "publishedOn": "2026-10-23",
       "stats": {
-        "views": 58
-      }
+        "views": 229
+      },
+      "link": "https://www.youtube.com/watch?v=rnrkpi8kLoo",
+      "statsUpdated": "2026-10-29"
     }
   ],
   "archive": [
+    {
+      "id": "R08",
+      "title": "R08 (old) API kya hai? (travel app se samjho)",
+      "pillar": "System Design",
+      "type": "concept",
+      "theme": "light",
+      "concepts": [
+        "API as contract",
+        "REST",
+        "Endpoint",
+        "Query parameters",
+        "HTTP methods GET/POST/PUT/PATCH/DELETE",
+        "201 Created",
+        "Idempotency",
+        "API key header",
+        "401 Unauthorized",
+        "429 Too Many Requests",
+        "JSON",
+        "Parallel API calls"
+      ],
+      "description": "Travel app ek screen pe saari airlines kaise dikhata hai — endpoint, methods, idempotency, 401/429, JSON",
+      "length": "2:52",
+      "folder": "reels/R08-API-Kya-Hai",
+      "status": "archived",
+      "idea": "RI-45",
+      "short": "S06",
+      "cover": "cover.png (channel grid style, light)",
+      "published": "2026-10-24",
+      "stats": {
+        "views": 121,
+        "viewers": 112,
+        "avgWatchSec": 5,
+        "skipRate": 0.77,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "follows": 0,
+        "note": "~1.5 h after posting"
+      },
+      "lesson": "2:52 concept reel + slow setup hook (topic word at 16 s) + weak frame 0 → 77% skip, 5 s avg watch. Gates added: check_voice.py (length/topic/question) + frame-0 15% check.",
+      "note": "Published 2026-10-24, archived on Instagram by user 2026-10-28 (77% skip, 5 s avg). Number R08 reused for UPI Pending. Folder reels/R08-API-Kya-Hai kept (cover style reference in docs/06)."
+    },
     {
       "title": "API reel (old)",
       "folder": "_archive/API-Reel",
@@ -345,15 +414,18 @@
       "Is reel ko save kar lo 📌, kyunki interview mein sabse pehla sawaal yahi hota hai.",
       "Save kar lo 📌, agli baar koi meeting mein 'API' bole toh tum blank nahi dikhoge.",
       "(R08 repeat of the API meeting save line — voiceover se aaya, next reel mein naya likhna)",
-      "Save kar lo, Java round mein kaam aayega. (R09)"
+      "Save kar lo, Java round mein kaam aayega. (R09)",
+      "Save kar lo, interview mein yahi explain karna. (R08)"
     ],
     "send": [
       "Us dost ko share kar do jo roz flight ka price check karta hai par kabhi book nahi karta. (R08)",
-      "Us dost ko bhejo jo roz HashMap likhta hai, andar kabhi nahi jhaanka. (R09)"
+      "Us dost ko bhejo jo roz HashMap likhta hai, andar kabhi nahi jhaanka. (R09)",
+      "Us dost ko bhejo jo sochta hai UPI matlab bas QR scan. (R08)"
     ],
     "quiz": [
       "Booking mein sirf seat number badalna hai, toh kaunsa method? PUT ya PATCH. (R08)",
-      "Capacity 64 pe kitni entries ke baad resize, aur kyun? (R09)"
+      "Capacity 64 pe kitni entries ke baad resize, aur kyun? (R09)",
+      "Pending pe dobara pay galat kyun? (R08, answer: idempotency)"
     ],
     "follow": [
       "Aise hi concepts simple way mein samajhne ke liye follow kar lo. Ye POST request hai, ek hi baar dabana. (R08)",
@@ -374,7 +446,8 @@
       "difficulty": "M",
       "sources": "✅ NPCI docs + monthly data",
       "priority": "H",
-      "status": "idea"
+      "status": "done",
+      "madeAs": "R08"
     },
     {
       "id": "RI-02",
@@ -389,7 +462,8 @@
       "difficulty": "M",
       "sources": "⚠️ check NPCI/RBI TAT rules before quoting days",
       "priority": "H",
-      "status": "idea"
+      "status": "idea",
+      "note": "Draft for R08 (UPI pending) dropped 2026-10-28 in favour of RI-01. R08 covers pending + idempotency briefly; RI-02 can go deeper (status-check limits 90 s / max 3 in 2 h, RBI T+1 / T+5, ₹100/day)."
     },
     {
       "id": "RI-03",
@@ -1035,8 +1109,8 @@
       "difficulty": "E",
       "sources": "✅",
       "priority": "H",
-      "status": "done",
-      "madeAs": "R08"
+      "status": "idea",
+      "note": "First attempt (R08, 2:52) archived on Instagram 2026-10-28. Redo: ≤60 s, hook gate, specific angle (not generic \"API kya hai\")."
     },
     {
       "id": "RI-46",
@@ -1790,6 +1864,38 @@
       "priority": "M",
       "status": "idea",
       "source": "added 2026-10-24: follow-up of R08 (API kya hai)"
+    },
+    {
+      "id": "RI-96",
+      "topPick": null,
+      "title": "Retry ka sahi tareeka: exponential backoff + jitter",
+      "pillar": "Backend",
+      "series": "Backend Ka Asli Kaam",
+      "format": "Concept / interview Q",
+      "hook": "Server down hai, toh har second retry? Galat.",
+      "keyPoints": "Fixed vs exponential backoff, jitter (thundering herd), max attempts, idempotent requests only, 429/503 + Retry-After",
+      "why": "R08 UPI status-check limit ka natural follow-up; interview favourite",
+      "difficulty": "M",
+      "sources": "✅ AWS Architecture Blog (backoff + jitter), RFC 9110 Retry-After",
+      "priority": "M",
+      "status": "idea",
+      "source": "added 2026-10-28: follow-up of R08 (UPI system design)"
+    },
+    {
+      "id": "RI-97",
+      "topPick": null,
+      "title": "Bank raat ko hisaab kaise milata hai? Reconciliation ka asli kaam",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Concept",
+      "hook": "Din bhar crore'on UPI payments, ek rupaya bhi idhar-udhar kaise nahi?",
+      "keyPoints": "Settlement cycles, ledger vs switch records, mismatch → reversal/dispute, deemed success, typical design",
+      "why": "R08 UPI Pending ke 'pending kaise resolve hota hai' sawaal ka next layer",
+      "difficulty": "M",
+      "sources": "NPCI settlement docs; typical design (verify before script)",
+      "priority": "M",
+      "status": "idea",
+      "source": "added 2026-10-28: follow-up of R08 (UPI system design)"
     }
   ],
   "videoIdeas": [
