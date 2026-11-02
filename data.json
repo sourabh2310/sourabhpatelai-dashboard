@@ -38,7 +38,7 @@
     "topicResearch": "2026-10-24",
     "faceCam": "skip for now (2026-10-24); add a FaceCam component later if the 4-week face vs no-face test starts",
     "proEditRule": "2026-10-24 user: screen never same >1 s; pro-level animations, transitions, VFX, SFX. Enforced by ALIVE/VFX tokens, reel-base built-ins, and pipeline/qc_motion.py gate",
-    "cleanup": "2026-11-02: never-uploaded folders deleted (R08 UPI, R09 HashMap, R10 UPI Pending, R12, R13 API redo, R14, R15, S07 UPI Pending, YT02 UPI). Renumbered: R11->R09, R16->R10, S08->S07, S09->S08."
+    "cleanup": "2026-11-02: never-uploaded folders deleted (R08 UPI, R09 HashMap, R10 UPI Pending, R12, R13 API redo, R14, R15, S07 UPI Pending, YT02 UPI). Renumbered: R11->R09, R16->R10, S08->S07, S09->S08. 2026-11-02 (later): API reel IG se delete -> latest R10; AI History R09->R08, Truecaller R10->R09."
   },
   "reels": [
     {
@@ -194,7 +194,7 @@
       "statsUpdated": "2026-10-29"
     },
     {
-      "id": "R09",
+      "id": "R08",
       "title": "AI ki History: 1966 ka chatbot vs ChatGPT",
       "pillar": "AI",
       "type": "story",
@@ -215,7 +215,7 @@
       ],
       "description": "1966 ELIZA ko log secrets batate the par woh kuch samajhta nahi tha → same line ELIZA vs ChatGPT live test → Turing se ChatGPT tak AI ka safar",
       "length": "2:56.6 (user approved 3 min)",
-      "folder": "reels/R09-AI-Ki-History",
+      "folder": "reels/R08-AI-Ki-History",
       "status": "published",
       "cover": "cover.png (white, image cover: 3D ELIZA CRT vs ChatGPT phone, project/src/reel/CoverSamples.tsx CoverA)",
       "short": "S07",
@@ -227,7 +227,7 @@
       "statsUpdated": "2026-10-29"
     },
     {
-      "id": "R10",
+      "id": "R09",
       "title": "Truecaller ko unknown number ka naam kaise pata? (+ CNAP 1 Nov 2026)",
       "pillar": "System Design",
       "type": "case",
@@ -246,7 +246,7 @@
       ],
       "description": "Hook: number save nahi, phir bhi 'Pappu Cable Wala'? Crowd labels → server key-value lookup → CNAP mein naam SIM KYC record se (operator), trade-off: SIM papa ke naam pe.",
       "length": "~73 s (211 words, script v2)",
-      "folder": "reels/R10-Truecaller-Naam-Kaise-Aata-Hai",
+      "folder": "reels/R09-Truecaller-Naam-Kaise-Aata-Hai",
       "status": "published",
       "scriptApproved": "2026-11-01",
       "voiceover": "AI voice in Sourabh ki awaaz (IndicF5, shared/voice/f5_say.py, voiceover/raw_ai.wav)",
@@ -263,6 +263,49 @@
       },
       "publishedOn": "2026-11-01",
       "link": "https://www.instagram.com/reel/DfOZOgNswHw/"
+    },
+    {
+      "id": "R10",
+      "title": "API kya hai? (travel app se samjho)",
+      "pillar": "System Design",
+      "type": "concept",
+      "theme": "light",
+      "concepts": [
+        "API as contract",
+        "REST",
+        "Endpoint",
+        "Query parameters",
+        "HTTP methods GET/POST/PUT/PATCH/DELETE",
+        "201 Created",
+        "Idempotency",
+        "API key header",
+        "401 Unauthorized",
+        "429 Too Many Requests",
+        "JSON",
+        "Parallel API calls"
+      ],
+      "description": "Travel app ek screen pe saari airlines kaise dikhata hai — endpoint, methods, idempotency, 401/429, JSON",
+      "length": "2:52",
+      "folder": "reels/R10-API-Kya-Hai",
+      "status": "rendered",
+      "idea": "RI-45",
+      "short": "S06",
+      "cover": "cover.png (channel grid style, light)",
+      "published": "2026-10-24",
+      "stats": {
+        "views": 121,
+        "viewers": 112,
+        "avgWatchSec": 5,
+        "skipRate": 0.77,
+        "likes": 1,
+        "comments": 0,
+        "shares": 0,
+        "saves": 0,
+        "follows": 0,
+        "note": "~1.5 h after posting"
+      },
+      "lesson": "2:52 concept reel + slow setup hook (topic word at 16 s) + weak frame 0 → 77% skip, 5 s avg watch. Gates added: check_voice.py (length/topic/question) + frame-0 15% check.",
+      "note": "Pehle R08 tha; 2026-11-02 user ne Instagram se poori delete ki. Same final/Reel.mp4 latest reel R10 ke roop mein 2026-11-02 shaam re-upload planned. YouTube pe S06 se already live."
     }
   ],
   "shorts": [
@@ -327,8 +370,8 @@
       "folder": "shorts/S06-API-Kya-Hai",
       "status": "published",
       "relatedVideo": "S05",
-      "reel": "R08",
-      "note": "Live on YouTube (found 2026-10-29). Linked reel R08 (old API) archived on Instagram 2026-10-28.",
+      "reel": "R10",
+      "note": "Live on YouTube (found 2026-10-29). Linked reel R10 (pehle R08; IG se delete 2026-11-02, IG re-upload planned 2026-11-02).",
       "link": "https://youtube.com/shorts/86TEzRx8sfA",
       "stats": {
         "views": 331
@@ -341,8 +384,8 @@
       "folder": "shorts/S07-AI-Ki-History",
       "status": "published",
       "relatedVideo": "S02",
-      "reel": "R09",
-      "note": "Same clean render as R09 (2:56.9). Related video → AI history YT video once live.",
+      "reel": "R08",
+      "note": "Same clean render as R08 (2:56.9). Related video → AI history YT video once live.",
       "link": "https://youtube.com/shorts/ZDQidkK4Tc8"
     },
     {
@@ -351,8 +394,8 @@
       "folder": "shorts/S08-Truecaller-Naam-Kaise-Aata-Hai",
       "status": "published",
       "relatedVideo": "latest System Design long-form",
-      "reel": "R10",
-      "note": "Same clean render as R10 (1:08). No YT ending (no matching long video). Titles A/B/C in shorts-meta.md.",
+      "reel": "R09",
+      "note": "Same clean render as R09 (1:08). No YT ending (no matching long video). Titles A/B/C in shorts-meta.md.",
       "link": "https://youtube.com/shorts/3buekSbopjc"
     }
   ],
@@ -377,49 +420,6 @@
   ],
   "archive": [
     {
-      "id": "R08",
-      "title": "R08 (old) API kya hai? (travel app se samjho)",
-      "pillar": "System Design",
-      "type": "concept",
-      "theme": "light",
-      "concepts": [
-        "API as contract",
-        "REST",
-        "Endpoint",
-        "Query parameters",
-        "HTTP methods GET/POST/PUT/PATCH/DELETE",
-        "201 Created",
-        "Idempotency",
-        "API key header",
-        "401 Unauthorized",
-        "429 Too Many Requests",
-        "JSON",
-        "Parallel API calls"
-      ],
-      "description": "Travel app ek screen pe saari airlines kaise dikhata hai — endpoint, methods, idempotency, 401/429, JSON",
-      "length": "2:52",
-      "folder": "reels/R08-API-Kya-Hai",
-      "status": "archived",
-      "idea": "RI-45",
-      "short": "S06",
-      "cover": "cover.png (channel grid style, light)",
-      "published": "2026-10-24",
-      "stats": {
-        "views": 121,
-        "viewers": 112,
-        "avgWatchSec": 5,
-        "skipRate": 0.77,
-        "likes": 1,
-        "comments": 0,
-        "shares": 0,
-        "saves": 0,
-        "follows": 0,
-        "note": "~1.5 h after posting"
-      },
-      "lesson": "2:52 concept reel + slow setup hook (topic word at 16 s) + weak frame 0 → 77% skip, 5 s avg watch. Gates added: check_voice.py (length/topic/question) + frame-0 15% check.",
-      "note": "Published 2026-10-24, archived on Instagram by user 2026-10-28 (77% skip, 5 s avg). Number R08 reused for UPI Pending. Folder reels/R08-API-Kya-Hai kept (cover style reference in docs/06)."
-    },
-    {
       "title": "API reel (old)",
       "folder": "_archive/API-Reel",
       "note": "redo"
@@ -442,24 +442,24 @@
     "save": [
       "Is reel ko save kar lo 📌, kyunki interview mein sabse pehla sawaal yahi hota hai.",
       "Save kar lo 📌, agli baar koi meeting mein 'API' bole toh tum blank nahi dikhoge.",
-      "(R08 repeat of the API meeting save line — voiceover se aaya, next reel mein naya likhna)",
-      "Save kar lo, interview mein yahi explain karna. (R08)",
-      "R09: To is reel ko save kar lo (AI ki poori kahani)",
-      "R09 caption: Interview mein \"AI ka evolution 1 minute mein batao\" aaye, toh yahi 3 points kaafi hain"
+      "(R10 repeat of the API meeting save line — voiceover se aaya, next reel mein naya likhna)",
+      "Save kar lo, interview mein yahi explain karna. (R10)",
+      "R08: To is reel ko save kar lo (AI ki poori kahani)",
+      "R08 caption: Interview mein \"AI ka evolution 1 minute mein batao\" aaye, toh yahi 3 points kaafi hain"
     ],
     "send": [
-      "Us dost ko share kar do jo roz flight ka price check karta hai par kabhi book nahi karta. (R08)",
-      "R09: Ye video apne us dost ko zaroor bhejna, jiska agle kuch dinon mein interview hai",
-      "Us dost ko bhejo jo har unknown call pe pehle Truecaller kholta hai. (R10)"
+      "Us dost ko share kar do jo roz flight ka price check karta hai par kabhi book nahi karta. (R10)",
+      "R08: Ye video apne us dost ko zaroor bhejna, jiska agle kuch dinon mein interview hai",
+      "Us dost ko bhejo jo har unknown call pe pehle Truecaller kholta hai. (R09)"
     ],
     "quiz": [
-      "Booking mein sirf seat number badalna hai, toh kaunsa method? PUT ya PATCH. (R08)",
-      "R09: ChatGPT sach mein samajhta hai ya ELIZA ka bada version? Reason ke saath comment",
-      "R10 caption: Number saved hai aur CNAP ON hai, toh screen pe kaunsa naam aayega, aur kyun?"
+      "Booking mein sirf seat number badalna hai, toh kaunsa method? PUT ya PATCH. (R10)",
+      "R08: ChatGPT sach mein samajhta hai ya ELIZA ka bada version? Reason ke saath comment",
+      "R09 caption: Number saved hai aur CNAP ON hai, toh screen pe kaunsa naam aayega, aur kyun?"
     ],
     "follow": [
-      "Aise hi concepts simple way mein samajhne ke liye follow kar lo. Ye POST request hai, ek hi baar dabana. (R08)",
-      "R10 caption: Aise hi apps ke andar ka system, seedha 1 minute mein 👉 @sourabhpatelai"
+      "Aise hi concepts simple way mein samajhne ke liye follow kar lo. Ye POST request hai, ek hi baar dabana. (R10)",
+      "R09 caption: Aise hi apps ke andar ka system, seedha 1 minute mein 👉 @sourabhpatelai"
     ]
   },
   "reelIdeas": [
@@ -1140,7 +1140,7 @@
       "sources": "✅",
       "priority": "H",
       "status": "idea",
-      "note": "First attempt (R08, 2:52) archived on Instagram 2026-10-28. Redo: ≤60 s, hook gate, specific angle (not generic \"API kya hai\")."
+      "note": "First attempt (R10, 2:52) archived on Instagram 2026-10-28. Redo: ≤60 s, hook gate, specific angle (not generic \"API kya hai\")."
     },
     {
       "id": "RI-46",
@@ -1854,14 +1854,14 @@
       "pillar": "Backend",
       "series": "Interview Mein Phas Gaye",
       "format": "Interview Q",
-      "hook": "R08 quiz ka jawab: 'seat number badalna hai, PUT ya PATCH?'",
+      "hook": "R10 quiz ka jawab: 'seat number badalna hai, PUT ya PATCH?'",
       "keyPoints": "Full replace vs partial update, idempotency (PUT yes, PATCH not guaranteed, POST no), 200/201/204, JSON Merge Patch",
-      "why": "R08 quiz comments ka answer reel; interview favourite",
+      "why": "R10 quiz comments ka answer reel; interview favourite",
       "difficulty": "M",
       "sources": "✅ RFC 9110 + RFC 5789",
       "priority": "H",
       "status": "idea",
-      "source": "added 2026-10-24: follow-up of R08 (API kya hai): quiz answer"
+      "source": "added 2026-10-24: follow-up of R10 (API kya hai): quiz answer"
     },
     {
       "id": "RI-94",
@@ -1872,12 +1872,12 @@
       "format": "Concept",
       "hook": "Naya feature aaya, phir bhi purana app kyun nahi toota?",
       "keyPoints": "URI vs header versioning, backward compatibility, deprecation window, breaking vs non-breaking change",
-      "why": "R08 se cut hua segment; natural next step",
+      "why": "R10 se cut hua segment; natural next step",
       "difficulty": "M",
       "sources": "typical design (no company claim)",
       "priority": "M",
       "status": "idea",
-      "source": "added 2026-10-24: follow-up of R08 (API kya hai): segment cut for length"
+      "source": "added 2026-10-24: follow-up of R10 (API kya hai): segment cut for length"
     },
     {
       "id": "RI-95",
@@ -1893,7 +1893,7 @@
       "sources": "GraphQL spec; typical design",
       "priority": "M",
       "status": "idea",
-      "source": "added 2026-10-24: follow-up of R08 (API kya hai)"
+      "source": "added 2026-10-24: follow-up of R10 (API kya hai)"
     },
     {
       "id": "RI-96",
@@ -1939,12 +1939,12 @@
         "scores",
         "softmax — ek sentence pe"
       ],
-      "why": "R09 (AI history) ka follow-up deep dive",
+      "why": "R08 (AI history) ka follow-up deep dive",
       "difficulty": "M",
       "sources": [],
       "priority": "M",
       "status": "idea",
-      "source": "added 2026-10-29: R09 follow-up",
+      "source": "added 2026-10-29: R08 follow-up",
       "topPick": false
     },
     {
@@ -1960,12 +1960,12 @@
         "temperature",
         "sampling"
       ],
-      "why": "R09 (AI history) ka follow-up deep dive",
+      "why": "R08 (AI history) ka follow-up deep dive",
       "difficulty": "M",
       "sources": [],
       "priority": "M",
       "status": "idea",
-      "source": "added 2026-10-29: R09 follow-up",
+      "source": "added 2026-10-29: R08 follow-up",
       "topPick": false
     },
     {
@@ -1980,12 +1980,12 @@
         "gradient",
         "weight update ek neuron pe"
       ],
-      "why": "R09 (AI history) ka follow-up deep dive",
+      "why": "R08 (AI history) ka follow-up deep dive",
       "difficulty": "M",
       "sources": [],
       "priority": "M",
       "status": "idea",
-      "source": "added 2026-10-29: R09 follow-up",
+      "source": "added 2026-10-29: R08 follow-up",
       "topPick": false
     },
     {
@@ -2001,12 +2001,12 @@
         "Threshold/score",
         "False positive trade-off"
       ],
-      "why": "R10 follow-up: caller-ID ke baad spam scoring",
+      "why": "R09 follow-up: caller-ID ke baad spam scoring",
       "difficulty": "M",
       "sources": [],
       "priority": "M",
       "status": "idea",
-      "source": "added 2026-11-01: R10 follow-up",
+      "source": "added 2026-11-01: R09 follow-up",
       "topPick": false
     },
     {
@@ -2021,12 +2021,12 @@
         "Truecaller: crowd labels, unlist option",
         "Business names: trademark/GST"
       ],
-      "why": "R10 follow-up: privacy angle, comments mein aa sakta hai",
+      "why": "R09 follow-up: privacy angle, comments mein aa sakta hai",
       "difficulty": "M",
       "sources": [],
       "priority": "M",
       "status": "idea",
-      "source": "added 2026-11-01: R10 follow-up",
+      "source": "added 2026-11-01: R09 follow-up",
       "topPick": false
     }
   ],
