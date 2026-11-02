@@ -4,7 +4,7 @@
     "handle": "@sourabhpatelai",
     "updated": "2026-11-02",
     "nextReel": "R11",
-    "nextShort": "S09",
+    "nextShort": "S10",
     "nextVideo": "YT02",
     "followers": {
       "instagram": 46,
@@ -281,19 +281,29 @@
         "QR screenshot leak = anyone can generate codes"
       ],
       "description": "Hook: phone flight mode pe, phir bhi code; server ko wahi 6 digit pata. Myth: server ne bheja (galat). Aman + GitHub 2FA + 482 913; twist ghadi 2 min peeche; ending interview one-liner.",
-      "length": "~57.6 s (171 words)",
+      "length": "~56 s (171 words)",
       "folder": "reels/R10-Authenticator-OTP-Bina-Internet",
-      "status": "voiceover",
+      "status": "rendered",
       "scriptApproved": "2026-11-02",
       "voiceover": "AI voice (IndicF5, shared/voice/f5_say.py, voiceover/raw_ai_clear.wav, 57.6 s), user ok 2026-11-02",
-      "short": null,
+      "short": "S09",
       "test": {
         "variable": "T4",
         "variant": "B flat 2D split-world",
         "hypothesis": "real-world scene world > glass cards for retention"
       },
       "hookType": "H1 wonder + H3 myth-buster",
-      "source": "RI-103"
+      "source": "RI-103",
+      "cover": "cover.png (light, OTP BINA / INTERNET, DevOps & Security)",
+      "render": {
+        "master": "final/Reel.mp4",
+        "phone": "final/Reel_phone.mp4",
+        "srt": "final/Reel.srt",
+        "date": "2026-11-02",
+        "qc": "qc_motion PASS (longest static 0.97 s, events 68%), -13.96 LUFS",
+        "length": "0:56 (1689 frames)",
+        "style": "B flat 2D split-world (project/src, from _Shared_Tools flat-cartoon)"
+      }
     }
   ],
   "shorts": [
@@ -385,6 +395,14 @@
       "reel": "R09",
       "note": "Same clean render as R09 (1:08). No YT ending (no matching long video). Titles A/B/C in shorts-meta.md.",
       "link": "https://youtube.com/shorts/3buekSbopjc"
+    },
+    {
+      "id": "S09",
+      "title": "OTP bina internet kaise banta hai? Authenticator TOTP Hindi #shorts",
+      "linkedReel": "R10",
+      "folder": "shorts/S09-Authenticator-OTP-Bina-Internet",
+      "video": "same as R10 final/Reel.mp4 (no YT ending, user 2026-11-02)",
+      "status": "rendered"
     }
   ],
   "videos": [
