@@ -3,7 +3,7 @@
     "channel": "Sourabh Patel AI",
     "handle": "@sourabhpatelai",
     "updated": "2026-11-02",
-    "nextReel": "R10",
+    "nextReel": "R11",
     "nextShort": "S09",
     "nextVideo": "YT02",
     "followers": {
@@ -263,6 +263,37 @@
       },
       "publishedOn": "2026-11-01",
       "link": "https://www.instagram.com/reel/DfOZOgNswHw/"
+    },
+    {
+      "id": "R10",
+      "title": "Authenticator ka OTP bina internet kaise? (TOTP)",
+      "pillar": "DevOps & Security",
+      "type": "concept",
+      "format": "Concept / myth-buster",
+      "theme": "light",
+      "concepts": [
+        "TOTP = time-based OTP",
+        "Shared secret via QR at 2FA setup",
+        "step = floor(time / 30)",
+        "HMAC one-way hash -> 6 digits",
+        "Code never sent over network",
+        "Clock drift -> reject; typical +-1 step window",
+        "QR screenshot leak = anyone can generate codes"
+      ],
+      "description": "Hook: phone flight mode pe, phir bhi code; server ko wahi 6 digit pata. Myth: server ne bheja (galat). Aman + GitHub 2FA + 482 913; twist ghadi 2 min peeche; ending interview one-liner.",
+      "length": "~57.6 s (171 words)",
+      "folder": "reels/R10-Authenticator-OTP-Bina-Internet",
+      "status": "voiceover",
+      "scriptApproved": "2026-11-02",
+      "voiceover": "AI voice (IndicF5, shared/voice/f5_say.py, voiceover/raw_ai_clear.wav, 57.6 s), user ok 2026-11-02",
+      "short": null,
+      "test": {
+        "variable": "T4",
+        "variant": "B flat 2D split-world",
+        "hypothesis": "real-world scene world > glass cards for retention"
+      },
+      "hookType": "H1 wonder + H3 myth-buster",
+      "source": "RI-103"
     }
   ],
   "shorts": [
@@ -412,11 +443,16 @@
     "quiz": [
       "Booking mein sirf seat number badalna hai, toh kaunsa method? PUT ya PATCH. (S06 API)",
       "R08: ChatGPT sach mein samajhta hai ya ELIZA ka bada version? Reason ke saath comment",
-      "R09 caption: Number saved hai aur CNAP ON hai, toh screen pe kaunsa naam aayega, aur kyun?"
+      "R09 caption: Number saved hai aur CNAP ON hai, toh screen pe kaunsa naam aayega, aur kyun?",
+      "R10 caption: Phone ki ghadi 10 second aage hai. Code chalega ya reject? Kyun?"
     ],
     "follow": [
       "Aise hi concepts simple way mein samajhne ke liye follow kar lo. Ye POST request hai, ek hi baar dabana. (S06 API)",
-      "R09 caption: Aise hi apps ke andar ka system, seedha 1 minute mein 👉 @sourabhpatelai"
+      "R09 caption: Aise hi apps ke andar ka system, seedha 1 minute mein 👉 @sourabhpatelai",
+      "R10 caption: 2FA ab interview mein bhi poochte hain, yahi 1 minute mein 👉 @sourabhpatelai"
+    ],
+    "interview": [
+      "R10: Interview mein bolo: TOTP mein code bheja nahi jaata, dono taraf BANAYA jaata hai."
     ]
   },
   "reelIdeas": [
@@ -1984,6 +2020,77 @@
       "priority": "M",
       "status": "idea",
       "source": "added 2026-11-01: R09 follow-up",
+      "topPick": false
+    },
+    {
+      "id": "RI-103",
+      "title": "Authenticator ka OTP bina internet kaise? (TOTP)",
+      "pillar": "DevOps & Security",
+      "series": "",
+      "format": "Concept / myth-buster",
+      "hook": "Phone flight mode pe, phir bhi Authenticator ne code de diya? Server ko wahi 6 digit pata",
+      "keyPoints": [
+        "Shared secret via QR at setup",
+        "step = floor(unix time / 30)",
+        "HMAC-SHA1(secret, step) -> truncate -> 6 digits",
+        "Clock drift: typical +-1 step window",
+        "QR screenshot = secret leak"
+      ],
+      "why": "Research 2026-11-02 §20: roz ka moment + wonder + myth; 249 competitor reels mein kisi ne nahi kiya",
+      "difficulty": "M",
+      "sources": [
+        "✅ RFC 6238, RFC 4226"
+      ],
+      "priority": "H",
+      "status": "done",
+      "madeAs": "R10",
+      "source": "added 2026-11-02: channel deep-dive findings (fresh topic)",
+      "topPick": false
+    },
+    {
+      "id": "RI-104",
+      "title": "Delivery boy ko tumhara number nahi dikhta, phir bhi call lagta hai (number masking)",
+      "pillar": "System Design",
+      "series": "Desi App Ka Backend",
+      "format": "Case study",
+      "hook": "Delivery partner ne call kiya, par uske phone pe tumhara number hai hi nahi?",
+      "keyPoints": [
+        "Virtual/proxy number pool",
+        "Call bridging via telephony provider",
+        "Order-scoped mapping + expiry",
+        "Typical design, app-specific claim verify"
+      ],
+      "why": "Roz ka moment + privacy wonder; R10 jaisa fresh angle",
+      "difficulty": "M",
+      "sources": [
+        "⚠️ telephony provider docs (Exotel/Twilio proxy)"
+      ],
+      "priority": "M",
+      "status": "idea",
+      "source": "added 2026-11-02: R10 follow-up (fresh-topic filter)",
+      "topPick": false
+    },
+    {
+      "id": "RI-105",
+      "title": "Passkey: password ke bina login kaise? (phone ne server ko kya diya)",
+      "pillar": "DevOps & Security",
+      "series": "",
+      "format": "Concept / myth-buster",
+      "hook": "Na password, na OTP, sirf fingerprint, aur login ho gaya?",
+      "keyPoints": [
+        "Public/private key pair per site",
+        "Server ke paas sirf public key",
+        "Challenge sign karna",
+        "Fingerprint sirf phone unlock karta hai, server tak nahi jaata"
+      ],
+      "why": "R10 follow-up: same split-world style (phone vs server), fresh",
+      "difficulty": "M",
+      "sources": [
+        "✅ FIDO2/WebAuthn spec"
+      ],
+      "priority": "M",
+      "status": "idea",
+      "source": "added 2026-11-02: R10 follow-up",
       "topPick": false
     }
   ],
