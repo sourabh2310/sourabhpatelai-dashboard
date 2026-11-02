@@ -3,8 +3,8 @@
     "channel": "Sourabh Patel AI",
     "handle": "@sourabhpatelai",
     "updated": "2026-11-02",
-    "nextReel": "R11",
-    "nextShort": "S10",
+    "nextReel": "R12",
+    "nextShort": "S11",
     "nextVideo": "YT02",
     "followers": {
       "instagram": 46,
@@ -294,7 +294,7 @@
       },
       "hookType": "H1 wonder + H3 myth-buster",
       "source": "RI-103",
-      "cover": "cover.png (light, OTP BINA / INTERNET, DevOps & Security)",
+      "cover": "cover.png (light, OTP BINA / INTERNET, twins hero: phone vs server 482 913 + '=' badge, 2026-11-02)",
       "render": {
         "master": "final/Reel.mp4",
         "phone": "final/Reel_phone.mp4",
@@ -304,6 +304,39 @@
         "length": "0:56 (1689 frames)",
         "style": "B flat 2D split-world (project/src, from _Shared_Tools flat-cartoon)"
       }
+    },
+    {
+      "id": "R11",
+      "title": "OTP khud bhar gaya — kya app saare SMS padh raha hai? (SMS Retriever)",
+      "pillar": "DevOps & Security",
+      "type": "concept",
+      "format": "Concept / myth-buster",
+      "theme": "light",
+      "concepts": [
+        "OTP autofill = SMS Retriever API",
+        "No SMS permission needed",
+        "11-char app hash from package + signing key",
+        "5 minute wait window",
+        "Hash match -> only that 1 SMS to app",
+        "Copy app -> different hash -> no SMS",
+        "No hash -> SMS User Consent popup (still 1 SMS)",
+        "Tip: non-SMS app asks SMS permission -> DENY"
+      ],
+      "description": "Hook: Swiggy login, OTP khud bhar gaya, 3,000 SMS — app sab padh raha? Myth: SMS permission (galat). Hash match → sirf 1 SMS; nakli app twist; popup; DENY tip; send CTA.",
+      "length": "~60 s (173 words)",
+      "folder": "reels/R11-OTP-Autofill-SMS-Padh-Raha",
+      "status": "script",
+      "scriptApproved": "2026-11-02",
+      "short": "S10",
+      "test": {
+        "variable": "T1",
+        "variant": "H3 myth/shock hook (vs default H1)",
+        "hypothesis": "'app mere SMS padh raha?' dar + roz ka moment, H1 se kam skip (compare R10)"
+      },
+      "hookType": "H3 myth/shock + H2 roz ka moment",
+      "source": "RI-106",
+      "cover": "cover.png (dark, OTP AUTOFILL / SIRF 1 SMS, Fingerprint hero, 2026-11-02)",
+      "style": "B flat 2D (phone + Android gate + SMS dher)"
     }
   ],
   "shorts": [
@@ -403,6 +436,13 @@
       "folder": "shorts/S09-Authenticator-OTP-Bina-Internet",
       "video": "same as R10 final/Reel.mp4 (no YT ending, user 2026-11-02)",
       "status": "rendered"
+    },
+    {
+      "id": "S10",
+      "linkedReel": "R11",
+      "title": "OTP Autofill kaise hota hai? App SMS padhta hai? | Android Hindi",
+      "folder": "shorts/S10-OTP-Autofill-SMS",
+      "status": "script"
     }
   ],
   "videos": [
@@ -456,18 +496,21 @@
     "send": [
       "Us dost ko share kar do jo roz flight ka price check karta hai par kabhi book nahi karta. (S06 API)",
       "R08: Ye video apne us dost ko zaroor bhejna, jiska agle kuch dinon mein interview hai",
-      "Us dost ko bhejo jo har unknown call pe pehle Truecaller kholta hai. (R09)"
+      "Us dost ko bhejo jo har unknown call pe pehle Truecaller kholta hai. (R09)",
+      "Ye us dost ko bhejo, jo har app pe bina padhe \"Allow\" daba deta hai. (R11)"
     ],
     "quiz": [
       "Booking mein sirf seat number badalna hai, toh kaunsa method? PUT ya PATCH. (S06 API)",
       "R08: ChatGPT sach mein samajhta hai ya ELIZA ka bada version? Reason ke saath comment",
       "R09 caption: Number saved hai aur CNAP ON hai, toh screen pe kaunsa naam aayega, aur kyun?",
-      "R10 caption: Phone ki ghadi 10 second aage hai. Code chalega ya reject? Kyun?"
+      "R10 caption: Phone ki ghadi 10 second aage hai. Code chalega ya reject? Kyun?",
+      "R11 caption: Copy app same naam ka bana liya, OTP SMS milega ya nahi? Kyun?"
     ],
     "follow": [
       "Aise hi concepts simple way mein samajhne ke liye follow kar lo. Ye POST request hai, ek hi baar dabana. (S06 API)",
       "R09 caption: Aise hi apps ke andar ka system, seedha 1 minute mein 👉 @sourabhpatelai",
-      "R10 caption: 2FA ab interview mein bhi poochte hain, yahi 1 minute mein 👉 @sourabhpatelai"
+      "R10 caption: 2FA ab interview mein bhi poochte hain, yahi 1 minute mein 👉 @sourabhpatelai",
+      "R11 caption: Android aur backend ka andar ka scene, 1 minute mein 👉 @sourabhpatelai"
     ],
     "interview": [
       "R10: Interview mein bolo: TOTP mein code bheja nahi jaata, dono taraf BANAYA jaata hai."
@@ -2110,6 +2153,33 @@
       "status": "idea",
       "source": "added 2026-11-02: R10 follow-up",
       "topPick": false
+    },
+    {
+      "id": "RI-106",
+      "topPick": false,
+      "title": "OTP khud bhar gaya — kya app saare SMS padh raha hai? (SMS Retriever)",
+      "pillar": "DevOps & Security",
+      "series": "",
+      "format": "Concept / myth-buster",
+      "hook": "Swiggy pe login, OTP khud box mein bhar gaya, phone mein 3,000 SMS — app sab padh raha hai?",
+      "keyPoints": [
+        "SMS Retriever API, no SMS permission",
+        "11-char app hash (package + signing cert)",
+        "5 min wait window",
+        "Copy app = different hash",
+        "SMS User Consent popup fallback",
+        "Play Store: SMS permission only default SMS handler"
+      ],
+      "why": "User 2026-11-02: daily-use relatable app moments; fresh (249 competitor reels mein nahi)",
+      "difficulty": "E",
+      "sources": [
+        "✅ Google Play SMS/Call Log policy",
+        "SMS Retriever docs"
+      ],
+      "priority": "H",
+      "status": "done",
+      "madeAs": "R11",
+      "source": "added 2026-11-02: user picked (daily app moment)"
     }
   ],
   "videoIdeas": [
