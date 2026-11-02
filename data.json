@@ -311,7 +311,7 @@
       "pillar": "DevOps & Security",
       "type": "concept",
       "format": "Concept / myth-buster",
-      "theme": "light",
+      "theme": "dark",
       "concepts": [
         "OTP autofill = SMS Retriever API",
         "No SMS permission needed",
@@ -329,14 +329,14 @@
       "scriptApproved": "2026-11-02",
       "short": "S10",
       "test": {
-        "variable": "T1",
-        "variant": "H3 myth/shock hook (vs default H1)",
-        "hypothesis": "'app mere SMS padh raha?' dar + roz ka moment, H1 se kam skip (compare R10)"
+        "variable": "T4",
+        "variant": "C 3D low-poly (phone + Android gate + SMS lifafe)",
+        "hypothesis": "3D world > flat B (R10) for retention; hook H3 bhi naya (confound noted)"
       },
       "hookType": "H3 myth/shock + H2 roz ka moment",
       "source": "RI-106",
       "cover": "cover.png (dark, OTP AUTOFILL / SIRF 1 SMS, inbox hero: OTP SMS + hash match green, baaki SMS blocked, fingerprint badge, 2026-11-02)",
-      "style": "B flat 2D (phone + Android gate + SMS dher)"
+      "style": "C 3D low-poly (@remotion/three + r3f); reusable props in project/src/props"
     }
   ],
   "shorts": [
