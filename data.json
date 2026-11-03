@@ -323,20 +323,22 @@
         "Tip: non-SMS app asks SMS permission -> DENY"
       ],
       "description": "Hook: Swiggy login, OTP khud bhar gaya, 3,000 SMS — app sab padh raha? Myth: SMS permission (galat). Hash match → sirf 1 SMS; nakli app twist; popup; DENY tip; send CTA.",
-      "length": "~60 s (173 words)",
+      "length": "63.9 s (own voice, best takes from 5-min face-cam recording)",
       "folder": "reels/R11-OTP-Autofill-SMS-Padh-Raha",
-      "status": "script",
+      "status": "rendered",
       "scriptApproved": "2026-11-02",
       "short": "S10",
       "test": {
         "variable": "T4",
-        "variant": "C 3D low-poly (phone + Android gate + SMS lifafe)",
-        "hypothesis": "3D world > flat B (R10) for retention; hook H3 bhi naya (confound noted)"
+        "variant": "B+ flat 2D illustrated world, dense pro-edit (not 3D low-poly as planned)",
+        "hypothesis": "rich illustrated scene + own voice > R10 flat; note: own-voice (not AI) is a confound"
       },
       "hookType": "H3 myth/shock + H2 roz ka moment",
       "source": "RI-106",
-      "cover": "cover.png (dark, OTP AUTOFILL / SIRF 1 SMS, inbox hero: OTP SMS + hash match green, baaki SMS blocked, fingerprint badge, 2026-11-02)",
-      "style": "C 3D low-poly (@remotion/three + r3f); reusable props in project/src/props"
+      "cover": "cover.png (channel grid style: DEVOPS & SECURITY, OTP AUTOFILL / SIRF 1 SMS, inbox hero; generic sender names, re-rendered 2026-11-03)",
+      "style": "2D animated illustrated world (CSS/SVG in Remotion): phone, Android gate, server, SMS lifafe, hash/fingerprint, popup, DENY stamp; 15 scenes, transition every cut (whip/zoom/spin/glitch/iris/light-leak), shake/flash/burst VFX, ~150 synth SFX, bold karaoke captions. Face-cam tried and dropped (user: face mat dikhao).",
+      "voiceover": "User's own recording (VID_20261103_090801269~2.mp4 audio): best takes cut, pauses tightened, DeepFilterNet3 denoise/de-reverb + gate, EQ, light comp, phone filter on app's line, -14 LUFS. No echo FX.",
+      "rendered": "2026-11-03"
     }
   ],
   "shorts": [
@@ -440,9 +442,9 @@
     {
       "id": "S10",
       "linkedReel": "R11",
-      "title": "OTP Autofill kaise hota hai? App SMS padhta hai? | Android Hindi",
+      "title": "OTP Khud Kaise Bhar Jaata Hai? App SMS Padhta Hai? 🤔 #shorts",
       "folder": "shorts/S10-OTP-Autofill-SMS",
-      "status": "script"
+      "status": "rendered"
     }
   ],
   "videos": [
