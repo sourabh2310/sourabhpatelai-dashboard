@@ -2,9 +2,9 @@
   "meta": {
     "channel": "Sourabh Patel AI",
     "handle": "@sourabhpatelai",
-    "updated": "2026-11-02",
-    "nextReel": "R12",
-    "nextShort": "S11",
+    "updated": "2026-11-03",
+    "nextReel": "R13",
+    "nextShort": "S12",
     "nextVideo": "YT02",
     "followers": {
       "instagram": 46,
@@ -339,6 +339,38 @@
       "style": "2D animated illustrated world (CSS/SVG in Remotion): phone, Android gate, server, SMS lifafe, hash/fingerprint, popup, DENY stamp; 15 scenes, transition every cut (whip/zoom/spin/glitch/iris/light-leak), shake/flash/burst VFX, ~150 synth SFX, bold karaoke captions. Face-cam tried and dropped (user: face mat dikhao).",
       "voiceover": "User's own recording (VID_20261103_090801269~2.mp4 audio): best takes cut, pauses tightened, DeepFilterNet3 denoise/de-reverb + gate, EQ, light comp, phone filter on app's line, -14 LUFS. No echo FX.",
       "rendered": "2026-11-03"
+    },
+    {
+      "id": "R12",
+      "title": "Delivery boy ke paas tumhara number nahi, phir bhi call kaise? (Number Masking)",
+      "pillar": "System Design",
+      "type": "concept",
+      "format": "Concept / roz ka moment",
+      "theme": "light",
+      "concepts": [
+        "Number masking = beech ka virtual number",
+        "Per-order virtual number (7788)",
+        "Telephony server call bridging",
+        "Lookup key = caller number + dialed number",
+        "Same virtual number shared across riders",
+        "Mapping expiry after delivery",
+        "Typical design (app internals not public)"
+      ],
+      "description": "Hook: Raat 9 baje Raju ka call, uske paas tumhara number nahi. Galat soch: app ne number de diya. Virtual 7788, server bridge, key = caller + dialed number (Raju+7788 = tum, Amit+7788 = koi aur), expiry. Interview one-liner + send CTA.",
+      "length": "80.6 s raw → ~74.6 s at 1.08x tempo (user: no cuts)",
+      "folder": "reels/R12-Number-Masking-Delivery-Call",
+      "status": "script",
+      "scriptApproved": "2026-11-03",
+      "short": "S11",
+      "test": {
+        "variable": "T1",
+        "variant": "H2 roz ka moment (time + jagah) instead of default H1 wonder+scale",
+        "hypothesis": "apna roz ka moment ('Raat 9 baje, Raju ka call') pehle 3 s mein kam swipe karwata hai"
+      },
+      "hookType": "H2 roz ka moment",
+      "source": "RI-104",
+      "cover": "cover.png (channel grid style: SYSTEM DESIGN, NUMBER MASKING / RAJU + 7788, PhoneCall hero, light)",
+      "voiceover": "User's own recording (1793695046917516.mp3), no cuts, 1.08x tempo"
     }
   ],
   "shorts": [
@@ -445,6 +477,13 @@
       "title": "OTP Khud Kaise Bhar Jaata Hai? App SMS Padhta Hai? 🤔 #shorts",
       "folder": "shorts/S10-OTP-Autofill-SMS",
       "status": "rendered"
+    },
+    {
+      "id": "S11",
+      "linkedReel": "R12",
+      "title": "Delivery Boy Ke Paas Tumhara Number Nahi, Phir Call Kaise? 📞 #shorts",
+      "folder": "shorts/S11-Number-Masking-Delivery-Call",
+      "status": "script"
     }
   ],
   "videos": [
@@ -499,23 +538,27 @@
       "Us dost ko share kar do jo roz flight ka price check karta hai par kabhi book nahi karta. (S06 API)",
       "R08: Ye video apne us dost ko zaroor bhejna, jiska agle kuch dinon mein interview hai",
       "Us dost ko bhejo jo har unknown call pe pehle Truecaller kholta hai. (R09)",
-      "Ye us dost ko bhejo, jo har app pe bina padhe \"Allow\" daba deta hai. (R11)"
+      "Ye us dost ko bhejo, jo har app pe bina padhe \"Allow\" daba deta hai. (R11)",
+      "Ye apne us dost ko bhej do jo darta hai ki delivery wala uska number save na kar le. (R12)"
     ],
     "quiz": [
       "Booking mein sirf seat number badalna hai, toh kaunsa method? PUT ya PATCH. (S06 API)",
       "R08: ChatGPT sach mein samajhta hai ya ELIZA ka bada version? Reason ke saath comment",
       "R09 caption: Number saved hai aur CNAP ON hai, toh screen pe kaunsa naam aayega, aur kyun?",
       "R10 caption: Phone ki ghadi 10 second aage hai. Code chalega ya reject? Kyun?",
-      "R11 caption: Copy app same naam ka bana liya, OTP SMS milega ya nahi? Kyun?"
+      "R11 caption: Copy app same naam ka bana liya, OTP SMS milega ya nahi? Kyun?",
+      "R12 caption: Raju ke paas ek saath 2 orders, dono pe same 7788 de diya, toh kya problem? Kyun?"
     ],
     "follow": [
       "Aise hi concepts simple way mein samajhne ke liye follow kar lo. Ye POST request hai, ek hi baar dabana. (S06 API)",
       "R09 caption: Aise hi apps ke andar ka system, seedha 1 minute mein 👉 @sourabhpatelai",
       "R10 caption: 2FA ab interview mein bhi poochte hain, yahi 1 minute mein 👉 @sourabhpatelai",
-      "R11 caption: Android aur backend ka andar ka scene, 1 minute mein 👉 @sourabhpatelai"
+      "R11 caption: Android aur backend ka andar ka scene, 1 minute mein 👉 @sourabhpatelai",
+      "R12 caption: Apps ke andar ka system, 1 minute mein 👉 @sourabhpatelai"
     ],
     "interview": [
-      "R10: Interview mein bolo: TOTP mein code bheja nahi jaata, dono taraf BANAYA jaata hai."
+      "R10: Interview mein bolo: TOTP mein code bheja nahi jaata, dono taraf BANAYA jaata hai.",
+      "R12: Interview mein bolo: masking ka key caller plus dialed number hai, sirf number nahi."
     ]
   },
   "reelIdeas": [
@@ -2129,9 +2172,10 @@
         "⚠️ telephony provider docs (Exotel/Twilio proxy)"
       ],
       "priority": "M",
-      "status": "idea",
+      "status": "done",
       "source": "added 2026-11-02: R10 follow-up (fresh-topic filter)",
-      "topPick": false
+      "topPick": false,
+      "madeAs": "R12"
     },
     {
       "id": "RI-105",
