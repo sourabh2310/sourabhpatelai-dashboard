@@ -357,20 +357,24 @@
         "Typical design (app internals not public)"
       ],
       "description": "Hook: Raat 9 baje Raju ka call, uske paas tumhara number nahi. Galat soch: app ne number de diya. Virtual 7788, server bridge, key = caller + dialed number (Raju+7788 = tum, Amit+7788 = koi aur), expiry. Interview one-liner + send CTA.",
-      "length": "80.6 s raw → ~74.6 s at 1.08x tempo (user: no cuts)",
+      "length": "74.8 s (user voice, no cuts, 1.08x)",
       "folder": "reels/R12-Number-Masking-Delivery-Call",
-      "status": "script",
+      "status": "rendered",
       "scriptApproved": "2026-11-03",
       "short": "S11",
       "test": {
         "variable": "T1",
         "variant": "H2 roz ka moment (time + jagah) instead of default H1 wonder+scale",
-        "hypothesis": "apna roz ka moment ('Raat 9 baje, Raju ka call') pehle 3 s mein kam swipe karwata hai"
+        "hypothesis": "apna roz ka moment ('Raat 9 baje, Raju ka call') pehle 3 s mein kam swipe karwata hai",
+        "note": "confound: visual style bhi badla (A 3D cinematic, R10/R11 flat 2D)"
       },
       "hookType": "H2 roz ka moment",
       "source": "RI-104",
-      "cover": "cover.png (channel grid style: SYSTEM DESIGN, NUMBER MASKING / RAJU + 7788, PhoneCall hero, light)",
-      "voiceover": "User's own recording (1793695046917516.mp3), no cuts, 1.08x tempo"
+      "cover": "cover.png (SYSTEM DESIGN, NUMBER MASKING / PHIR BHI CALL, phones hero: Raju calling ↔ tumhara phone, badge 7788, dark phone screens; no icon orbit)",
+      "voiceover": "User's own recording (1793695046917516.mp3), no cuts, 1.08x tempo",
+      "rendered": "2026-11-03",
+      "style": "A 3D cinematic world (Remotion + R3F, GPU/ANGLE): Diwali night street, Raju scooter, customer building, telephony tower with 7788 display, call beams, aerial city with many riders, hologram lookup table, morning reject shot; bloom/vignette/grain, flash/whip/zoom/light-leak transitions, Soft UI SFX, E5 captions",
+      "qc": "length PASS 74.5 s · qc_motion PASS (longest static 1.00 s) · master -14 LUFS"
     }
   ],
   "shorts": [
@@ -483,7 +487,7 @@
       "linkedReel": "R12",
       "title": "Delivery Boy Ke Paas Tumhara Number Nahi, Phir Call Kaise? 📞 #shorts",
       "folder": "shorts/S11-Number-Masking-Delivery-Call",
-      "status": "script"
+      "status": "rendered"
     }
   ],
   "videos": [
