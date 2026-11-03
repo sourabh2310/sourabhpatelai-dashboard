@@ -371,10 +371,11 @@
       "hookType": "H2 roz ka moment",
       "source": "RI-104",
       "cover": "cover.png (SYSTEM DESIGN, NUMBER MASKING / PHIR BHI CALL, phones hero: Raju calling ↔ tumhara phone, badge 7788, dark phone screens; no icon orbit)",
-      "voiceover": "User's own recording (1793695046917516.mp3), no cuts, 1.08x tempo",
+      "voiceover": "User's own recording (1793695046917516.mp3), no cuts, 1.08x tempo; voice FX: HP 85 Hz, -2.5 dB @250, +3 dB presence @3.2k, de-esser, 3:1 comp, light warmth; no echo/reverb (user)",
       "rendered": "2026-11-03",
       "style": "A 3D cinematic world (Remotion + R3F, GPU/ANGLE): Diwali night street, Raju scooter, customer building, telephony tower with 7788 display, call beams, aerial city with many riders, hologram lookup table, morning reject shot; bloom/vignette/grain, flash/whip/zoom/light-leak transitions, Soft UI SFX, E5 captions",
-      "qc": "length PASS 74.5 s · qc_motion PASS (longest static 1.00 s) · master -14 LUFS"
+      "qc": "length PASS 74.5 s · qc_motion PASS (longest static 1.00 s) · master -14 LUFS",
+      "sound": "R12 kit (project/tools/make_sfx_r12.py, peak -3 dBFS): transition on every cut (hit_sub/whip/whoosh+impact/shimmer), risers into reveals, DTMF 7788, ringtone, ringback, connect, SIT call-fail, stamps, ticks, fireworks crackle, city ambience bed. Mix: voice ~-17 dB, SFX hits -19..-24 dB, ambience ~-39 dB"
     }
   ],
   "shorts": [
