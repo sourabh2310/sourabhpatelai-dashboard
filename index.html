@@ -80,6 +80,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;margin:28px 0 8px}
   <div class="hero" id="hero"></div>
   <div class="next" id="next"></div>
   <section><h2>Top performers</h2><div class="best" id="best"></div></section>
+  <section id="akHome"><h2>Aisa Kyun? <span class="sub">@aisakyunbysourabh · Instagram</span></h2><div class="best" id="akStats"></div></section>
   <section><h2>Pillar mix <span class="sub">actual vs target</span></h2><div class="card mix" id="mix"></div></section>
   <section><h2>Up next <span class="sub" id="wk"></span></h2><div class="card list" id="upnext"></div></section>
   <section><h2>Coming up in India <span class="sub">calendar</span></h2><div class="card list" id="cal"></div></section>
@@ -88,6 +89,11 @@ footer{color:var(--muted);font-size:12px;text-align:center;margin:28px 0 8px}
 <div class="view" id="v-yt">
   <section><h2>YouTube Videos</h2><div class="card list" id="videos"></div></section>
   <section><h2>YouTube Shorts <span class="sub" id="sc"></span></h2><div class="card list" id="shorts"></div></section>
+</div>
+<div class="view" id="v-ak">
+  <div class="hero" id="akHero"></div>
+  <section><h2>Aisa Kyun? Reels <span class="sub" id="akc"></span></h2><div class="card list" id="akPosts"></div></section>
+  <section><h2>Up next <span class="sub">by launch priority</span></h2><div class="card list" id="akNext"></div></section>
 </div>
 <div class="view" id="v-ideas"><section><h2>Topic bank <span class="sub" id="ic"></span></h2>
   <div class="tools"><button class="seg on" id="tR">Reel ideas</button><button class="seg" id="tV">Video ideas</button><input type="search" id="q" placeholder="Search topics…"></div>
@@ -100,6 +106,7 @@ footer{color:var(--muted);font-size:12px;text-align:center;margin:28px 0 8px}
   <button class="on" data-v="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Overview</button>
   <button data-v="reels"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 9l5 3-5 3z"/></svg>Reels</button>
   <button data-v="yt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg>YouTube</button>
+  <button data-v="ak"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/></svg>Aisa Kyun</button>
   <button data-v="ideas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>Ideas</button>
 </nav>
 
@@ -133,6 +140,21 @@ function render(D){
   const draw=()=>{const L=src().filter(i=>(pf==="All"||i.pillar===pf)&&(!q||JSON.stringify(i).toLowerCase().includes(q)));$("#ideas").innerHTML=L.map(ideaCard).join("")||'<div class="empty">Nothing matches</div>';$("#ic").textContent=L.length+" ideas";$("#pf").innerHTML=pills.map(p=>`<button class="seg ${p===pf?'on':''}" data-p="${esc(p)}">${esc(p)}</button>`).join("");$("#pf").querySelectorAll("button").forEach(b=>b.onclick=()=>{pf=b.dataset.p;draw()})};
   $("#q").oninput=e=>{q=e.target.value.toLowerCase();draw()};$("#tR").onclick=()=>{mode="R";$("#tR").classList.add("on");$("#tV").classList.remove("on");draw()};$("#tV").onclick=()=>{mode="V";$("#tV").classList.add("on");$("#tR").classList.remove("on");draw()};draw();
   $("#foot").textContent=`${m.channel} · Studio Planner`;
+  renderAK(D.aisakyun);
+}
+function renderAK(K){
+  if(!K){$("#akHome").style.display="none";return}
+  const km=K.meta||{}, P=K.posts||[], I=K.ideas||[];
+  const st=p=>p.stats?.latest||p.stats?.d7||p.stats?.h24||null;
+  const pub=P.filter(p=>p.status==="published"), tv=P.reduce((a,p)=>a+(st(p)?.views||0),0);
+  const top=[...P].filter(p=>st(p)?.views).sort((a,b)=>st(b).views-st(a).views)[0];
+  const s3=stat("IG followers",fmt(km.followers?.instagram),`${pub.length} published`)+stat("Reel views",fmt(tv),"all time")+(top?stat(`Top · ${top.id}`,fmt(st(top).views),esc(top.title)):stat("Top reel","—",""));
+  $("#akStats").innerHTML=s3;
+  $("#akHero").innerHTML=stat("IG followers",fmt(km.followers?.instagram),km.handle||"")+stat("Reels",P.length,`${pub.length} published`)+stat("Reel views",fmt(tv),"all time")+stat("Updated",esc(km.updated||"—"),"");
+  $("#akc").textContent=P.length+" total";
+  $("#akPosts").innerHTML=[...P].reverse().map(p=>row(p.id,p.title,`<span class="tag" style="background:var(--warn)">${esc(p.contentType||"")}</span><span>${esc(p.category||"")}</span>${p.url?`<a class="mono" href="${esc(p.url)}" target="_blank" rel="noopener" style="color:inherit">↗ IG</a>`:""}`,p.status,st(p))).join("")||'<div class="empty">No reels yet</div>';
+  const nx=I.filter(i=>i.launchPriority&&!["published","rendered","done"].includes(i.status)).sort((a,b)=>a.launchPriority-b.launchPriority);
+  $("#akNext").innerHTML=nx.map(i=>`<div class="row"><div class="id">${i.id}</div><div><div class="t">${esc(i.title)}</div><div class="meta"><span>${esc(i.contentType||"")}</span><span>${esc(i.category||"")}</span></div></div><span class="st script">${esc(i.status)}</span></div>`).join("")||'<div class="empty">Nothing queued</div>';
 }
 document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{document.querySelectorAll("nav button").forEach(x=>x.classList.toggle("on",x===b));document.querySelectorAll(".view").forEach(v=>v.classList.toggle("on",v.id==="v-"+b.dataset.v));scrollTo(0,0)});
 const root=document.documentElement;try{const t=localStorage.getItem("theme");if(t)root.dataset.theme=t}catch(e){}

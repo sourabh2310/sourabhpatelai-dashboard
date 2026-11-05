@@ -2,13 +2,13 @@
   "meta": {
     "channel": "Sourabh Patel AI",
     "handle": "@sourabhpatelai",
-    "updated": "2026-11-03",
-    "nextReel": "R13",
-    "nextShort": "S12",
+    "updated": "2026-11-05",
+    "nextReel": "R14",
+    "nextShort": "S13",
     "nextVideo": "YT02",
     "followers": {
-      "instagram": 46,
-      "youtube": 9
+      "instagram": 72,
+      "youtube": 22
     },
     "pillarMix": {
       "System Design": 35,
@@ -38,7 +38,8 @@
     "topicResearch": "2026-10-24",
     "faceCam": "skip for now (2026-10-24); add a FaceCam component later if the 4-week face vs no-face test starts",
     "proEditRule": "2026-10-24 user: screen never same >1 s; pro-level animations, transitions, VFX, SFX. Enforced by ALIVE/VFX tokens, reel-base built-ins, and pipeline/qc_motion.py gate",
-    "cleanup": "2026-11-02: never-uploaded folders deleted (R08 UPI, R09 HashMap, R10 UPI Pending, R12, R13 API redo, R14, R15, S07 UPI Pending, YT02 UPI). Renumbered: R11->R09, R16->R10, S08->S07, S09->S08. 2026-11-02 (later): API reel IG se delete -> latest R10; AI History R09->R08, Truecaller R10->R09. API reel folder bhi delete (user, remake karenge); nextReel R10."
+    "cleanup": "2026-11-02: never-uploaded folders deleted (R08 UPI, R09 HashMap, R10 UPI Pending, R12, R13 API redo, R14, R15, S07 UPI Pending, YT02 UPI). Renumbered: R11->R09, R16->R10, S08->S07, S09->S08. 2026-11-02 (later): API reel IG se delete -> latest R10; AI History R09->R08, Truecaller R10->R09. API reel folder bhi delete (user, remake karenge); nextReel R10.",
+    "statsUpdated": "2026-11-05"
   },
   "reels": [
     {
@@ -77,10 +78,10 @@
       "status": "published",
       "short": "S01",
       "stats": {
-        "views": 1639
+        "views": 1652
       },
       "link": "https://www.instagram.com/reel/DeonTXoPhB8/",
-      "statsUpdated": "2026-10-29"
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "R03",
@@ -98,10 +99,10 @@
       "stats": {
         "likes": 28,
         "comments": 2,
-        "views": 1625
+        "views": 1649
       },
       "link": "https://www.instagram.com/reel/DerZ2DEv_5M/",
-      "statsUpdated": "2026-10-29"
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "R04",
@@ -118,10 +119,10 @@
       "status": "published",
       "short": null,
       "stats": {
-        "views": 195
+        "views": 222
       },
       "link": "https://www.instagram.com/reel/Devn6cVvQgQ/",
-      "statsUpdated": "2026-10-29"
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "R05",
@@ -139,10 +140,10 @@
       "status": "published",
       "short": "S03",
       "stats": {
-        "views": 1553
+        "views": 1578
       },
       "link": "https://www.instagram.com/reel/Dewl4f8Pw7B/",
-      "statsUpdated": "2026-10-29"
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "R06",
@@ -165,10 +166,10 @@
       "short": "S04",
       "video": "YT01",
       "stats": {
-        "views": 2012
+        "views": 2069
       },
       "link": "https://www.instagram.com/reel/DezJvoBPasC/",
-      "statsUpdated": "2026-10-29"
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "R07",
@@ -188,10 +189,10 @@
       "status": "published",
       "short": "S05",
       "stats": {
-        "views": 176
+        "views": 216
       },
       "link": "https://www.instagram.com/reel/De11-uXvJ2E/",
-      "statsUpdated": "2026-10-29"
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "R08",
@@ -222,9 +223,9 @@
       "publishedOn": "2026-10-29",
       "link": "https://www.instagram.com/reel/DfE9EDKs98o/",
       "stats": {
-        "views": 109
+        "views": 1425
       },
-      "statsUpdated": "2026-10-29"
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "R09",
@@ -262,7 +263,11 @@
         "voice": "AI (IndicF5, best-of-4 + clarity EQ)"
       },
       "publishedOn": "2026-11-01",
-      "link": "https://www.instagram.com/reel/DfOZOgNswHw/"
+      "link": "https://www.instagram.com/reel/DfOZOgNswHw/",
+      "stats": {
+        "views": 2339
+      },
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "R10",
@@ -283,7 +288,7 @@
       "description": "Hook: phone flight mode pe, phir bhi code; server ko wahi 6 digit pata. Myth: server ne bheja (galat). Aman + GitHub 2FA + 482 913; twist ghadi 2 min peeche; ending interview one-liner.",
       "length": "~56 s (171 words)",
       "folder": "reels/R10-Authenticator-OTP-Bina-Internet",
-      "status": "rendered",
+      "status": "published",
       "scriptApproved": "2026-11-02",
       "voiceover": "AI voice (IndicF5, shared/voice/f5_say.py, voiceover/raw_ai_clear.wav, 57.6 s), user ok 2026-11-02",
       "short": "S09",
@@ -303,7 +308,12 @@
         "qc": "qc_motion PASS (longest static 0.97 s, events 68%), -13.96 LUFS",
         "length": "0:56 (1689 frames)",
         "style": "B flat 2D split-world (project/src, from _Shared_Tools flat-cartoon)"
-      }
+      },
+      "link": "https://www.instagram.com/reel/DfPa8qjs51u/",
+      "stats": {
+        "views": 1763
+      },
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "R11",
@@ -325,7 +335,7 @@
       "description": "Hook: Swiggy login, OTP khud bhar gaya, 3,000 SMS — app sab padh raha? Myth: SMS permission (galat). Hash match → sirf 1 SMS; nakli app twist; popup; DENY tip; send CTA.",
       "length": "63.9 s (own voice, best takes from 5-min face-cam recording)",
       "folder": "reels/R11-OTP-Autofill-SMS-Padh-Raha",
-      "status": "rendered",
+      "status": "published",
       "scriptApproved": "2026-11-02",
       "short": "S10",
       "test": {
@@ -338,7 +348,12 @@
       "cover": "cover.png (channel grid style: DEVOPS & SECURITY, OTP AUTOFILL / SIRF 1 SMS, inbox hero; generic sender names, re-rendered 2026-11-03)",
       "style": "2D animated illustrated world (CSS/SVG in Remotion): phone, Android gate, server, SMS lifafe, hash/fingerprint, popup, DENY stamp; 15 scenes, transition every cut (whip/zoom/spin/glitch/iris/light-leak), shake/flash/burst VFX, ~150 synth SFX, bold karaoke captions. Face-cam tried and dropped (user: face mat dikhao).",
       "voiceover": "User's own recording (VID_20261103_090801269~2.mp4 audio): best takes cut, pauses tightened, DeepFilterNet3 denoise/de-reverb + gate, EQ, light comp, phone filter on app's line, -14 LUFS. No echo FX.",
-      "rendered": "2026-11-03"
+      "rendered": "2026-11-03",
+      "link": "https://www.instagram.com/reel/DfRSMCRNqMV/",
+      "stats": {
+        "views": 1536
+      },
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "R12",
@@ -359,7 +374,7 @@
       "description": "Hook: Raat 9 baje Raju ka call, uske paas tumhara number nahi. Galat soch: app ne number de diya. Virtual 7788, server bridge, key = caller + dialed number (Raju+7788 = tum, Amit+7788 = koi aur), expiry. Interview one-liner + send CTA.",
       "length": "74.8 s (user voice, no cuts, 1.08x)",
       "folder": "reels/R12-Number-Masking-Delivery-Call",
-      "status": "rendered",
+      "status": "published",
       "scriptApproved": "2026-11-03",
       "short": "S11",
       "test": {
@@ -375,7 +390,50 @@
       "rendered": "2026-11-03",
       "style": "A 3D cinematic world (Remotion + R3F, GPU/ANGLE): Diwali night street, Raju scooter, customer building, telephony tower with 7788 display, call beams, aerial city with many riders, hologram lookup table, morning reject shot; bloom/vignette/grain, flash/whip/zoom/light-leak transitions, Soft UI SFX, E5 captions",
       "qc": "length PASS 74.5 s · qc_motion PASS (longest static 1.00 s) · master -14 LUFS",
-      "sound": "R12 kit (project/tools/make_sfx_r12.py, peak -3 dBFS): transition on every cut (hit_sub/whip/whoosh+impact/shimmer), risers into reveals, DTMF 7788, ringtone, ringback, connect, SIT call-fail, stamps, ticks, fireworks crackle, city ambience bed. Mix: voice ~-17 dB, SFX hits -19..-24 dB, ambience ~-39 dB"
+      "sound": "R12 kit (project/tools/make_sfx_r12.py, peak -3 dBFS): transition on every cut (hit_sub/whip/whoosh+impact/shimmer), risers into reveals, DTMF 7788, ringtone, ringback, connect, SIT call-fail, stamps, ticks, fireworks crackle, city ambience bed. Mix: voice ~-17 dB, SFX hits -19..-24 dB, ambience ~-39 dB",
+      "stats": {
+        "views": 5611,
+        "likes": 133
+      },
+      "statsUpdated": "2026-11-05",
+      "link": "https://www.instagram.com/reel/DfR-UXdsEAq/"
+    },
+    {
+      "id": "R13",
+      "title": "Number save nahi, Truecaller nahi, phir bhi 'Suspected Spam' kaise? (Operator spam label)",
+      "pillar": "System Design",
+      "type": "concept",
+      "format": "Concept / roz ka moment",
+      "theme": "day 3D",
+      "concepts": [
+        "Operator network-level spam label (jaise Airtel, Sep 2024)",
+        "Call record: kisne, kisko, kitni der",
+        "Signals: call volume, short duration, low incoming ratio (TRAI 2025)",
+        "Score + limit → Suspected Spam tag",
+        "Delivery rider: high volume but incoming normal",
+        "False positive",
+        "Exact formula public nahi"
+      ],
+      "description": "Hook: dopahar 2 baje anjaan call, na saved na Truecaller, phir bhi SPAM. Galat soch: phone ki app. Vikas loan wala 1000 calls, 8 s, incoming ~0 → score → label. Pintu 80–100 calls par incoming normal. False positive. Interview one-liner + send CTA.",
+      "length": "84.6 s (v2: user-edited own voice, speed by user, only long pauses >0.45 s + lead silence removed; over 75 s max by user choice)",
+      "folder": "reels/R13-Suspected-Spam-Label-Kaise",
+      "status": "published",
+      "scriptApproved": "2026-11-04",
+      "hookType": "H2 roz ka moment",
+      "short": "S12",
+      "test": {
+        "variable": "T1",
+        "variant": "H2 roz ka moment (replicate 2/3) + style A 3D cinematic same as R12",
+        "hypothesis": "R12 ki jeet H2 hook + 3D world ki thi; same combo dobara 3K+ laaye toh pattern confirm",
+        "note": "B-roll cutaways (7 macro inserts) naya element"
+      },
+      "cover": "cover.png v2 (dark, `score` hero: red spam phone + score gauge 92); v1 phones in work2/",
+      "voiceover": "voiceover/raw_v2_user_edit.m4a (+ Clipchamp SRT); v1 take in final/v1_old_take",
+      "link": "https://www.instagram.com/reel/DfUjgg8P30o/",
+      "stats": {
+        "views": 1433
+      },
+      "statsUpdated": "2026-11-05"
     }
   ],
   "shorts": [
@@ -385,10 +443,10 @@
       "title": "SQL Query Production Mein Slow Kyun? 🤯 | Database Indexing #Shorts",
       "status": "published",
       "stats": {
-        "views": 49
+        "views": 62
       },
       "link": "https://youtube.com/shorts/jJdD6oVapdw",
-      "statsUpdated": "2026-10-29"
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "S02",
@@ -396,10 +454,10 @@
       "title": "Can a PDF Trick ChatGPT? 😳 | Prompt Injection Explained in Hindi #Shorts",
       "status": "published",
       "stats": {
-        "views": 34
+        "views": 43
       },
       "link": "https://youtube.com/shorts/kNk5S2nK4Hs",
-      "statsUpdated": "2026-10-29"
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "S03",
@@ -407,10 +465,10 @@
       "title": "Java Stack vs Heap Memory – 2 Minute mein Clear! #Shorts",
       "status": "published",
       "stats": {
-        "views": 49
+        "views": 61
       },
       "link": "https://youtube.com/shorts/mBAahpvmyis",
-      "statsUpdated": "2026-10-29"
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "S04",
@@ -418,10 +476,10 @@
       "title": "Tatkal ticket milna namumkin kyun hai? 😰🚂 #shorts #indianrailways #irctc",
       "status": "published",
       "stats": {
-        "views": 518
+        "views": 630
       },
       "link": "https://youtube.com/shorts/0bYmz_Jq4Z4",
-      "statsUpdated": "2026-10-29"
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "S05",
@@ -429,10 +487,10 @@
       "title": "Server Down Kyun Hota Hai? Request, Packets, 404 vs 503 Simple Hindi Mein",
       "status": "published",
       "stats": {
-        "views": 112
+        "views": 132
       },
       "link": "https://youtube.com/shorts/ll4-aVA_5qQ",
-      "statsUpdated": "2026-10-29"
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "S06",
@@ -444,9 +502,9 @@
       "note": "Live on YouTube (found 2026-10-29). Source reel folder (API, pehle R08/R10) 2026-11-02 delete; IG se bhi delete. API reel dobara fresh banegi (idea RI-45).",
       "link": "https://youtube.com/shorts/86TEzRx8sfA",
       "stats": {
-        "views": 331
+        "views": 368
       },
-      "statsUpdated": "2026-10-29"
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "S07",
@@ -456,7 +514,11 @@
       "relatedVideo": "S02",
       "reel": "R08",
       "note": "Same clean render as R08 (2:56.9). Related video → AI history YT video once live.",
-      "link": "https://youtube.com/shorts/ZDQidkK4Tc8"
+      "link": "https://youtube.com/shorts/ZDQidkK4Tc8",
+      "stats": {
+        "views": 110
+      },
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "S08",
@@ -466,7 +528,11 @@
       "relatedVideo": "latest System Design long-form",
       "reel": "R09",
       "note": "Same clean render as R09 (1:08). No YT ending (no matching long video). Titles A/B/C in shorts-meta.md.",
-      "link": "https://youtube.com/shorts/3buekSbopjc"
+      "link": "https://youtube.com/shorts/3buekSbopjc",
+      "stats": {
+        "views": 319
+      },
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "S09",
@@ -474,21 +540,49 @@
       "linkedReel": "R10",
       "folder": "shorts/S09-Authenticator-OTP-Bina-Internet",
       "video": "same as R10 final/Reel.mp4 (no YT ending, user 2026-11-02)",
-      "status": "rendered"
+      "status": "published",
+      "link": "https://youtube.com/shorts/597dEyGn_4Y",
+      "stats": {
+        "views": 85
+      },
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "S10",
       "linkedReel": "R11",
       "title": "OTP Khud Kaise Bhar Jaata Hai? App SMS Padhta Hai? 🤔 #shorts",
       "folder": "shorts/S10-OTP-Autofill-SMS",
-      "status": "rendered"
+      "status": "published",
+      "link": "https://youtube.com/shorts/BMD6l9rHYoY",
+      "stats": {
+        "views": 204
+      },
+      "statsUpdated": "2026-11-05"
     },
     {
       "id": "S11",
       "linkedReel": "R12",
       "title": "Delivery Boy Ke Paas Tumhara Number Nahi, Phir Call Kaise? 📞 #shorts",
       "folder": "shorts/S11-Number-Masking-Delivery-Call",
-      "status": "rendered"
+      "status": "published",
+      "stats": {
+        "views": 1300
+      },
+      "statsUpdated": "2026-11-05",
+      "link": "https://youtube.com/shorts/jlJ8_7xPfsU"
+    },
+    {
+      "id": "S12",
+      "linkedReel": "R13",
+      "title": "Spam Call Kaise Pata Chalta Hai? Suspected Spam Ka Sach 📵 #shorts",
+      "folder": "shorts/S12-Suspected-Spam-Label-Kaise",
+      "video": "same as R13 final/Reel.mp4 (no YT ending)",
+      "status": "published",
+      "link": "https://youtube.com/shorts/wroBliFzxRo",
+      "stats": {
+        "views": 29
+      },
+      "statsUpdated": "2026-11-05"
     }
   ],
   "videos": [
@@ -504,10 +598,11 @@
       "status": "published",
       "publishedOn": "2026-10-23",
       "stats": {
-        "views": 229
+        "views": 258,
+        "likes": 9
       },
       "link": "https://www.youtube.com/watch?v=rnrkpi8kLoo",
-      "statsUpdated": "2026-10-29"
+      "statsUpdated": "2026-11-05"
     }
   ],
   "archive": [
@@ -544,7 +639,8 @@
       "R08: Ye video apne us dost ko zaroor bhejna, jiska agle kuch dinon mein interview hai",
       "Us dost ko bhejo jo har unknown call pe pehle Truecaller kholta hai. (R09)",
       "Ye us dost ko bhejo, jo har app pe bina padhe \"Allow\" daba deta hai. (R11)",
-      "Ye apne us dost ko bhej do jo darta hai ki delivery wala uska number save na kar le. (R12)"
+      "Ye apne us dost ko bhej do jo darta hai ki delivery wala uska number save na kar le. (R12)",
+      "Ye apne us dost ko bhejo, jo har suspected call uthakar baat karne lag jaata hai. (R13)"
     ],
     "quiz": [
       "Booking mein sirf seat number badalna hai, toh kaunsa method? PUT ya PATCH. (S06 API)",
@@ -552,18 +648,21 @@
       "R09 caption: Number saved hai aur CNAP ON hai, toh screen pe kaunsa naam aayega, aur kyun?",
       "R10 caption: Phone ki ghadi 10 second aage hai. Code chalega ya reject? Kyun?",
       "R11 caption: Copy app same naam ka bana liya, OTP SMS milega ya nahi? Kyun?",
-      "R12 caption: Raju ke paas ek saath 2 orders, dono pe same 7788 de diya, toh kya problem? Kyun?"
+      "R12 caption: Raju ke paas ek saath 2 orders, dono pe same 7788 de diya, toh kya problem? Kyun?",
+      "R13 caption: Clinic roz 300 patients ko 20 sec ki reminder call karta hai, koi wapas call nahi karta. Spam tag lagega? Kyun?"
     ],
     "follow": [
       "Aise hi concepts simple way mein samajhne ke liye follow kar lo. Ye POST request hai, ek hi baar dabana. (S06 API)",
       "R09 caption: Aise hi apps ke andar ka system, seedha 1 minute mein 👉 @sourabhpatelai",
       "R10 caption: 2FA ab interview mein bhi poochte hain, yahi 1 minute mein 👉 @sourabhpatelai",
       "R11 caption: Android aur backend ka andar ka scene, 1 minute mein 👉 @sourabhpatelai",
-      "R12 caption: Apps ke andar ka system, 1 minute mein 👉 @sourabhpatelai"
+      "R12 caption: Apps ke andar ka system, 1 minute mein 👉 @sourabhpatelai",
+      "R13 caption: Aise hi phone ke andar ka system, seedha 1 minute mein 👉 @sourabhpatelai"
     ],
     "interview": [
       "R10: Interview mein bolo: TOTP mein code bheja nahi jaata, dono taraf BANAYA jaata hai.",
-      "R12: Interview mein bolo: masking ka key caller plus dialed number hai, sirf number nahi."
+      "R12: Interview mein bolo: masking ka key caller plus dialed number hai, sirf number nahi.",
+      "R13: Interview mein bolo: spam koi numbers ki list nahi, call pattern ka score hai."
     ]
   },
   "reelIdeas": [
@@ -2109,9 +2208,10 @@
       "difficulty": "M",
       "sources": [],
       "priority": "M",
-      "status": "idea",
+      "status": "done",
       "source": "added 2026-11-01: R09 follow-up",
-      "topPick": false
+      "topPick": false,
+      "madeAs": "R13"
     },
     {
       "id": "RI-102",
@@ -2231,6 +2331,48 @@
       "status": "done",
       "madeAs": "R11",
       "source": "added 2026-11-02: user picked (daily app moment)"
+    },
+    {
+      "id": "RI-107",
+      "title": "SMS pe 'AX-BANKXX' jaisa naam kaise aata hai? (DLT header, 140/160 series)",
+      "pillar": "System Design",
+      "series": "",
+      "format": "Concept / roz ka moment",
+      "hook": "SMS ka sender 'VM-HDFCBK', number kyun nahi? Fake SMS ka header kaisa hota hai?",
+      "keyPoints": [
+        "DLT registration = sender header",
+        "Prefix: operator + circle",
+        "160 series (bank/govt calls)",
+        "Fake header pehchano"
+      ],
+      "why": "R13 follow-up: telecom ka andar ka system, roz ka moment, fresh",
+      "difficulty": "M",
+      "sources": [],
+      "priority": "M",
+      "status": "idea",
+      "source": "added 2026-11-04: R13 follow-up",
+      "topPick": false
+    },
+    {
+      "id": "RI-108",
+      "title": "Spam label galat lag gaya? Number ka score wapas kaise girta hai",
+      "pillar": "System Design",
+      "series": "",
+      "format": "Concept / roz ka moment",
+      "hook": "Mera naya number 'Suspected Spam' dikh raha hai, kyun aur kaise hatega?",
+      "keyPoints": [
+        "Score ek din ka nahi, pattern ka",
+        "Incoming badhne se score girta hai",
+        "Operator/DND app pe complaint",
+        "False positive ka fix"
+      ],
+      "why": "R13 follow-up: false positive angle, viewer ka fayda (H4)",
+      "difficulty": "M",
+      "sources": [],
+      "priority": "M",
+      "status": "idea",
+      "source": "added 2026-11-04: R13 follow-up",
+      "topPick": false
     }
   ],
   "videoIdeas": [
@@ -3272,5 +3414,263 @@
       "priority": "normal",
       "source": "pre-research (Claude list) — demand verified nahi"
     }
-  ]
+  ],
+  "aisakyun": {
+    "meta": {
+      "channel": "Aisa Kyun? by Sourabh Patel",
+      "handle": "@aisakyunbysourabh",
+      "platforms": [
+        "Instagram",
+        "Facebook",
+        "YouTube"
+      ],
+      "idPrefix": "K",
+      "setupComplete": false,
+      "created": "2026-11-03",
+      "pendingSetup": [
+        "videoStarterTemplate",
+        "coverStyle",
+        "postingTime"
+      ],
+      "profileAssets": {
+        "primaryPhoto": "profile/profile-picture-primary.jpg",
+        "backupPhoto": "profile/profile-picture-backup-purple.jpg",
+        "ytBanner": "profile/youtube-banner.jpg",
+        "fbCover": "profile/facebook-cover.jpg"
+      },
+      "videoStyle": "3-Layer Hybrid (H Base 70% + C Isometric Cutaway 20% + A Cinematic Accent 10%)",
+      "followers": {
+        "instagram": 10
+      },
+      "updated": "2026-11-05"
+    },
+    "posts": [
+      {
+        "id": "K01",
+        "title": "Chips ke packet mein itni hawa kyun hoti hai?",
+        "contentType": "Type 2",
+        "category": "Everyday Myth-Buster",
+        "status": "published",
+        "renderDate": "2026-11-04",
+        "files": {
+          "master": "reels/K01-Chips-Packet-Hawa/final/Reel.mp4",
+          "phone": "reels/K01-Chips-Packet-Hawa/final/Reel_phone.mp4",
+          "caption": "reels/K01-Chips-Packet-Hawa/caption.md",
+          "sample15s": "reels/K01-Chips-Packet-Hawa/final/Sample_v2_phone.mp4"
+        },
+        "duration": 56.9,
+        "lufs": -13.9,
+        "note": "2026-11-04: rebuilt — Canva real photos + 2.5D parallax + 3D N2 molecules, text-behind-subject, Poppins captions, avatar+handle stamp, B-roll. Line \"2 din mein geela\" flagged as inaccurate (voice).",
+        "url": "https://www.instagram.com/reel/DfUlT_pxqsL/",
+        "posted": null,
+        "stats": {
+          "h24": null,
+          "d7": null,
+          "latest": {
+            "at": "2026-11-05",
+            "platform": "instagram",
+            "views": 1436,
+            "likes": 28,
+            "comments": 0
+          }
+        }
+      },
+      {
+        "id": "K02",
+        "title": "Phone raat bhar charge pe lagana battery kharab karta hai?",
+        "contentType": "Type 2",
+        "category": "Everyday Myth-Buster",
+        "hookType": "K2",
+        "status": "rendered",
+        "renderDate": "2026-11-05",
+        "files": {
+          "master": "reels/K02-Phone-Raat-Bhar-Charge/final/Reel.mp4",
+          "phone": "reels/K02-Phone-Raat-Bhar-Charge/final/Reel_phone.mp4",
+          "cover": "reels/K02-Phone-Raat-Bhar-Charge/final/cover.png",
+          "caption": "reels/K02-Phone-Raat-Bhar-Charge/caption.md"
+        },
+        "duration": 81.5,
+        "lufs": -13.97,
+        "posted": null,
+        "url": null,
+        "stats": {
+          "h24": null,
+          "d7": null
+        },
+        "note": "Voice raw 91.5 s -> pauses tightened + 1.08x tempo = 81.5 s (no spoken words cut). Visuals: Canva real photos with Sourabh face (hook, 4 people = dadaji/papa/dost/colleague, shaadi, jugaad, 2AM) + CSS battery/thermo/settings UI. Echo FX on GARMI + Bilkul NAHI. Length test: >70 s (user approved longer)."
+      }
+    ],
+    "ideas": [
+      {
+        "id": "K01",
+        "title": "Chips ke packet mein itni hawa kyun hoti hai?",
+        "contentType": "Type 2",
+        "category": "Everyday Myth-Buster",
+        "hookType": "K2",
+        "confidence": "settled",
+        "status": "published",
+        "launchPriority": 1
+      },
+      {
+        "id": "K02",
+        "title": "Phone raat bhar charge pe lagana battery kharab karta hai?",
+        "contentType": "Type 2",
+        "category": "Everyday Myth-Buster",
+        "hookType": "K2",
+        "confidence": "settled",
+        "status": "rendered",
+        "launchPriority": 2
+      },
+      {
+        "id": "K03",
+        "title": "Gas geyser wale band bathroom mein achanak chakkar kyun aata hai?",
+        "contentType": "Type 1",
+        "category": "Household Safety & Winter Season",
+        "hookType": "K6+K7",
+        "confidence": "settled",
+        "status": "ready_for_script",
+        "launchPriority": 3
+      },
+      {
+        "id": "K04",
+        "title": "Room heater raat bhar chala kar sone ke baad gala aur sar bhari kyun lagta hai?",
+        "contentType": "Type 1",
+        "category": "Household Safety & Winter Season",
+        "hookType": "K7",
+        "confidence": "settled",
+        "status": "ready_for_script",
+        "launchPriority": 4
+      },
+      {
+        "id": "K05",
+        "title": "Petrol pump pe phone chalana sach mein dangerous hai ya myth?",
+        "contentType": "Type 2",
+        "category": "Everyday Myth-Buster",
+        "hookType": "K2",
+        "confidence": "settled",
+        "status": "ready_for_script",
+        "launchPriority": 5
+      },
+      {
+        "id": "K06",
+        "title": "Sardi mein gaadi ya darwaza chhoone par bijli ka jhatka (current) kyun lagta hai?",
+        "contentType": "Type 1",
+        "category": "Household & Winter Season",
+        "hookType": "K1+K7",
+        "confidence": "settled",
+        "status": "ready_for_script",
+        "launchPriority": 6
+      },
+      {
+        "id": "I01",
+        "title": "Chips ke packet mein itni hawa kyun?",
+        "hookType": "K2",
+        "confidence": "settled",
+        "status": "idea",
+        "source": "user 2026-11-03"
+      },
+      {
+        "id": "I02",
+        "title": "Mirror mein achhe, photo mein alag kyun?",
+        "hookType": "K3",
+        "confidence": "widely-accepted",
+        "status": "idea",
+        "source": "user 2026-11-03"
+      },
+      {
+        "id": "I03",
+        "title": "Baarish ke baad mitti ki khushboo kahan se aati hai?",
+        "hookType": "K1",
+        "confidence": "settled",
+        "status": "idea",
+        "source": "user 2026-11-03"
+      },
+      {
+        "id": "I04",
+        "title": "Hotel bedsheet mostly white kyun hoti hai?",
+        "hookType": "K5",
+        "confidence": "widely-accepted",
+        "status": "idea",
+        "source": "user 2026-11-03"
+      },
+      {
+        "id": "I05",
+        "title": "Apni recorded voice ajeeb kyun lagti hai?",
+        "hookType": "K3",
+        "confidence": "settled",
+        "status": "idea",
+        "source": "user 2026-11-03"
+      },
+      {
+        "id": "I06",
+        "title": "Lift mein mirror kyun lagate hain?",
+        "hookType": "K5",
+        "confidence": "verify",
+        "status": "idea",
+        "source": "user 2026-11-03"
+      },
+      {
+        "id": "I07",
+        "title": "Train ke wheels ka shape aisa kyun hota hai?",
+        "hookType": "K4",
+        "confidence": "settled",
+        "status": "idea",
+        "source": "user 2026-11-03"
+      },
+      {
+        "id": "I08",
+        "title": "Gas geyser wale band bathroom mein chakkar kyun aata hai?",
+        "hookType": "K6+K7",
+        "confidence": "settled",
+        "season": "Nov-Jan",
+        "status": "idea",
+        "source": "added 2026-11-03: seasonal angle from reference analysis"
+      },
+      {
+        "id": "I09",
+        "title": "Sardi mein darwaza/gaadi chhoone pe current kyun lagta hai?",
+        "hookType": "K1+K7",
+        "confidence": "settled",
+        "season": "Nov-Jan",
+        "status": "idea",
+        "source": "added 2026-11-03: seasonal angle from reference analysis"
+      },
+      {
+        "id": "I10",
+        "title": "Sardi mein baar-baar bathroom kyun jaana padta hai?",
+        "hookType": "K3+K7",
+        "confidence": "settled",
+        "season": "Nov-Jan",
+        "status": "idea",
+        "source": "added 2026-11-03: seasonal angle from reference analysis"
+      },
+      {
+        "id": "I11",
+        "title": "Nariyal tel sardi mein jam kyun jaata hai, sarson ka nahi?",
+        "hookType": "K1+K7",
+        "confidence": "settled",
+        "season": "Nov-Jan",
+        "status": "idea",
+        "source": "added 2026-11-03: seasonal angle from reference analysis"
+      },
+      {
+        "id": "I12",
+        "title": "Delhi mein sardi mein hi kohra + smog kyun phansta hai?",
+        "hookType": "K2+K7",
+        "confidence": "settled",
+        "season": "Nov-Jan",
+        "status": "idea",
+        "source": "added 2026-11-03: seasonal angle from reference analysis"
+      },
+      {
+        "id": "I13",
+        "title": "Sankranti pe patang ka manjha itna khatarnaak kyun?",
+        "hookType": "K6+K7",
+        "confidence": "settled",
+        "season": "Nov-Jan",
+        "status": "idea",
+        "source": "added 2026-11-03: seasonal angle from reference analysis"
+      }
+    ]
+  }
 }
